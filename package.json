@@ -1,8 +1,8 @@
 {
-  "name": "vitesse-webext",
-  "displayName": "Vitesse WebExt",
+  "name": "pulumi-consolepus",
+  "displayName": "Pulumi Consolepus",
   "version": "0.0.1",
-  "description": "[description]",
+  "description": "A browser extension for the Pulumi Console",
   "private": true,
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
