@@ -2,4 +2,4 @@ package.json
 yarn.lock
 tsconfig.json
 
-CHANGELOG.md
+*.md
