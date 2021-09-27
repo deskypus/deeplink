@@ -31,10 +31,10 @@ export async function getManifest() {
             48: "./assets/icon-512.png",
             128: "./assets/icon-512.png",
         },
-        permissions: ["tabs", "storage", "activeTab", "https://app.pulumi.com/"],
+        permissions: ["tabs", "storage", "activeTab", "https://app.pulumi.com/*/projects"],
         content_scripts: [
             {
-                matches: ["https://app.pulumi.com/*"],
+                matches: ["https://app.pulumi.com/*/projects"],
                 js: ["./dist/contentScripts/index.global.js"],
             },
         ],
