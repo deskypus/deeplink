@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import { onMessage } from "webext-bridge";
 import { createApp } from "vue";
-// import App from "./views/App.vue";
 import OpenProjectButton from "./views/OpenProjectButton.vue";
 
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
@@ -40,10 +39,13 @@ import OpenProjectButton from "./views/OpenProjectButton.vue";
             }
 
             const projGroupName = projectContainer.querySelector("app-project-group .proj-group-name");
+            if (!projGroupName || !projGroupName.parentElement || projGroupName.querySelector(".pul-desk")) {
+                continue;
+            }
+
             const buttonContainer = document.createElement("div");
             buttonContainer.style.display = "inline-block";
-            projGroupName?.parentElement?.append(buttonContainer);
-            createApp(OpenProjectButton, { href: repoUrl }).mount(buttonContainer);
+            projGroupName.parentElement.append(buttonContainer);
 
             const projectNameEl = projectContainer.querySelectorAll(
                 ".project-container-inner .projects app-project-card .project-card .mat-card-content app-project-header .project-label .proj-project-name"
@@ -51,7 +53,8 @@ import OpenProjectButton from "./views/OpenProjectButton.vue";
 
             const projectNames: string[] = [];
             projectNameEl.forEach((p) => projectNames.push(p.textContent!));
-            console.log("project names", projectNames);
+
+            createApp(OpenProjectButton, { href: repoUrl, projectNames }).mount(buttonContainer);
         }
     });
 })();
