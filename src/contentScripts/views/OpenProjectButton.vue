@@ -1,6 +1,6 @@
 <template>
     <a
-        class="ml-8 mat-focus-indicator mat-raised-button mat-button-base mat-primary"
+        class="mr-8 mat-focus-indicator mat-raised-button mat-button-base mat-primary"
         :href="formattedHref"
         @click.stop
         target="_blank"
@@ -13,6 +13,7 @@
 </template>
 <script setup lang="ts">
 import "virtual:windi.css";
+import "../style.scss";
 
 const props = defineProps({
     href: {

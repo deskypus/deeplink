@@ -31,27 +31,36 @@ import OpenProjectButton from "./views/OpenProjectButton.vue";
                 continue;
             }
 
-            const projectRepoAnchorEl = projectContainer.querySelectorAll("app-project-group .pul-link.external-link");
+            const projectRepoAnchorElements = projectContainer.querySelectorAll(
+                "app-project-group .pul-link.external-link"
+            );
             // There should be only one anchor (<a>) tag in the `app-project-group` element.
-            const repoUrl = projectRepoAnchorEl.item(0).getAttribute("href");
+            if (!projectRepoAnchorElements || !projectRepoAnchorElements.length) {
+                return;
+            }
+
+            const repoUrl = projectRepoAnchorElements.item(0).getAttribute("href");
             if (!repoUrl) {
                 continue;
             }
 
             const projGroupNameEl = projectContainer.querySelector("app-project-group .proj-group-name");
-            const projectNameEl = projectContainer.querySelectorAll(
+            const projectNameElements = projectContainer.querySelectorAll(
                 ".project-container-inner .projects app-project-card .project-card .mat-card-content app-project-header .project-label .proj-project-name"
             );
 
-            projectNameEl.forEach((p) => {
-                const buttonContainer = document.createElement("div");
-                buttonContainer.classList.add("pul-desk");
-                buttonContainer.style.display = "inline-block";
+            projectNameElements.forEach((p: Element) => {
                 if (p.querySelector(".pul-desk")) {
                     return;
                 }
 
+                p.classList.add("proj-project-name-flex");
+
+                const buttonContainer = document.createElement("div");
+                buttonContainer.classList.add("pul-desk");
+                buttonContainer.style.display = "inline-block";
                 p.appendChild(buttonContainer);
+
                 const projectName = p.textContent;
                 const projGroupName = projGroupNameEl?.textContent || "";
                 createApp(OpenProjectButton, { href: repoUrl, projGroupName, projectName }).mount(buttonContainer);
