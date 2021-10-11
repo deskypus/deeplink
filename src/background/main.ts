@@ -21,22 +21,32 @@ browser.tabs.onActivated.addListener(async ({ tabId }) => {
     previousTabId = tabId;
 });
 
-browser.tabs.onUpdated.addListener((tabId: number, changeInfo: Tabs.OnUpdatedChangeInfoType, tab: Tabs.Tab) => {
-    if (tab.status !== "complete") {
-        return;
+browser.tabs.onUpdated.addListener(
+    (tabId: number, changeInfo: Tabs.OnUpdatedChangeInfoType, tab: Tabs.Tab) => {
+        if (tab.status !== "complete") {
+            return;
+        }
+        sendMessage("tab-loaded", {}, { context: "content-script", tabId });
+    },
+    {
+        urls: ["https://app.pulumi.com/*/projects", "https://app.pulumi.com/*/projects/"],
+        properties: ["status"],
     }
-    sendMessage("tab-loaded", {}, { context: "content-script", tabId });
-});
+);
 
 onMessage("get-current-tab", async () => {
     try {
         const tab = await browser.tabs.get(previousTabId);
-        return {
-            title: tab?.id,
-        };
-    } catch {
-        return {
-            title: undefined,
-        };
+        if (tab?.id) {
+            return {
+                title: tab.id.toString(10),
+            };
+        }
+    } catch (err) {
+        console.error(`Could not get tab info for tab id ${previousTabId}`, err);
     }
+
+    return {
+        title: "",
+    };
 });

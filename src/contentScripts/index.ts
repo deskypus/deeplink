@@ -38,23 +38,24 @@ import OpenProjectButton from "./views/OpenProjectButton.vue";
                 continue;
             }
 
-            const projGroupName = projectContainer.querySelector("app-project-group .proj-group-name");
-            if (!projGroupName || !projGroupName.parentElement || projGroupName.querySelector(".pul-desk")) {
-                continue;
-            }
-
-            const buttonContainer = document.createElement("div");
-            buttonContainer.style.display = "inline-block";
-            projGroupName.parentElement.append(buttonContainer);
-
+            const projGroupNameEl = projectContainer.querySelector("app-project-group .proj-group-name");
             const projectNameEl = projectContainer.querySelectorAll(
                 ".project-container-inner .projects app-project-card .project-card .mat-card-content app-project-header .project-label .proj-project-name"
             );
 
-            const projectNames: string[] = [];
-            projectNameEl.forEach((p) => projectNames.push(p.textContent!));
+            projectNameEl.forEach((p) => {
+                const buttonContainer = document.createElement("div");
+                buttonContainer.classList.add("pul-desk");
+                buttonContainer.style.display = "inline-block";
+                if (p.querySelector(".pul-desk")) {
+                    return;
+                }
 
-            createApp(OpenProjectButton, { href: repoUrl, projectNames }).mount(buttonContainer);
+                p.appendChild(buttonContainer);
+                const projectName = p.textContent;
+                const projGroupName = projGroupNameEl?.textContent || "";
+                createApp(OpenProjectButton, { href: repoUrl, projGroupName, projectName }).mount(buttonContainer);
+            });
         }
     });
 })();

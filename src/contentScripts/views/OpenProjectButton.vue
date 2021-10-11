@@ -1,7 +1,8 @@
 <template>
     <a
-        class="pul-desk ml-8 mat-focus-indicator mat-raised-button mat-button-base mat-primary"
+        class="ml-8 mat-focus-indicator mat-raised-button mat-button-base mat-primary"
         :href="formattedHref"
+        @click.stop
         target="_blank"
         rel="noopener"
     >
@@ -18,14 +19,21 @@ const props = defineProps({
         type: String,
         required: true,
     },
-    projectNames: {
-        type: Array,
+    projGroupName: {
+        type: String,
+        required: true,
+    },
+    projectName: {
+        type: String,
         required: true,
     },
 });
 
 const formattedHref = computed(() => {
-    const projects = props.projectNames.map((n) => `project=${n}`).join("&");
-    return `pulumidesktop://projects?source=console&repo=${encodeURIComponent(props.href)}&${projects}`;
+    const query = [];
+    query.push(`repo=${encodeURIComponent(props.href)}`);
+    query.push(`projectGroupName=${props.projGroupName}`);
+    query.push(`projectName=${props.projectName}`);
+    return `pulumidesktop://projects?source=console&${query.join("&")}`;
 });
 </script>
