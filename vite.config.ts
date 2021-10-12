@@ -9,6 +9,8 @@ import WindiCSS from "vite-plugin-windicss";
 import windiConfig from "./windi.config";
 import { r, port, isDev } from "./scripts/utils";
 
+import { FileSystemIconLoader } from "unplugin-icons/loaders";
+
 export const sharedConfig: UserConfig = {
     root: r("src"),
     resolve: {
@@ -46,7 +48,11 @@ export const sharedConfig: UserConfig = {
         }),
 
         // https://github.com/antfu/unplugin-icons
-        Icons(),
+        Icons({
+            customCollections: {
+                logos: FileSystemIconLoader("./extension/assets"),
+            },
+        }),
 
         // rewrite assets to use relative path
         {

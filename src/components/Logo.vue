@@ -1,11 +1,14 @@
 <template>
-    <a
-        class="icon-btn mx-2 text-2xl"
-        rel="noreferrer"
-        href="https://github.com/antfu/vitesse-webext"
-        target="_blank"
-        title="GitHub"
-    >
-        <pixelarticons-power />
-    </a>
+    <PulumiIcon />
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
+
+import PulumiIcon from "~icons/logos/pulumi-on-white";
+
+export default defineComponent({
+    components: {
+        PulumiIcon,
+    },
+});
+</script>

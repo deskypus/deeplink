@@ -22,7 +22,7 @@ browser.tabs.onActivated.addListener(async ({ tabId }) => {
 });
 
 browser.tabs.onUpdated.addListener((tabId: number, changeInfo: Tabs.OnUpdatedChangeInfoType, tab: Tabs.Tab) => {
-    if (tab.status !== "complete") {
+    if (!tab.url?.match("https://app.pulumi.com/*/projects") || tab.status !== "complete") {
         return;
     }
     sendMessage("tab-loaded", {}, { context: "content-script", tabId });

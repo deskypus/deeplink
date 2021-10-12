@@ -14,7 +14,7 @@ export async function getManifest() {
         version: pkg.version,
         description: pkg.description,
         browser_action: {
-            default_icon: "./assets/icon-512.png",
+            default_icon: "./assets/icon.png",
             default_popup: "./dist/popup/index.html",
         },
         options_ui: {
@@ -27,9 +27,9 @@ export async function getManifest() {
             persistent: false,
         },
         icons: {
-            16: "./assets/icon-512.png",
-            48: "./assets/icon-512.png",
-            128: "./assets/icon-512.png",
+            16: "./assets/icon.png",
+            48: "./assets/icon.png",
+            128: "./assets/icon.png",
         },
         permissions: ["tabs", "storage", "activeTab", "https://app.pulumi.com/*"],
         content_scripts: [
