@@ -34,7 +34,7 @@ export async function getManifest() {
         permissions: ["tabs", "storage", "activeTab", "https://app.pulumi.com/*"],
         content_scripts: [
             {
-                matches: ["https://app.pulumi.com/*/projects"],
+                matches: ["https://app.pulumi.com/*"],
                 js: ["./dist/contentScripts/index.global.js"],
             },
         ],
