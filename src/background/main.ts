@@ -22,7 +22,12 @@ browser.tabs.onActivated.addListener(async ({ tabId }) => {
 });
 
 browser.tabs.onUpdated.addListener((tabId: number, changeInfo: Tabs.OnUpdatedChangeInfoType, tab: Tabs.Tab) => {
-    if (!tab.url?.match("https://app.pulumi.com/*/projects") || tab.status !== "complete") {
+    // We don't care about the tab's status if the URL isn't what we want.
+    if (!tab.url?.match("https://app.pulumi.com/*/projects")) {
+        return;
+    }
+    // Don't do anything if the tab hasn't finished loading.
+    if (tab.status !== "complete") {
         return;
     }
     sendMessage("tab-loaded", {}, { context: "content-script", tabId });
