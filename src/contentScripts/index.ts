@@ -1,9 +1,22 @@
 /* eslint-disable no-console */
 import { onMessage } from "webext-bridge";
+import Cookies from "js-cookie";
 import { createApp } from "vue";
 import OpenProjectButton from "./views/OpenProjectButton.vue";
 
-function process() {
+interface OrganizationInfo {
+    name: string;
+    githubLogin: string;
+    avatarUrl: string;
+}
+
+interface PulumiUserInfo extends OrganizationInfo {
+    email: string;
+    organizations: OrganizationInfo[];
+    identities: string[];
+}
+
+function process(userInfo: PulumiUserInfo) {
     const projectContainers = document.querySelectorAll(".project-container");
     const length = projectContainers?.length || 0;
 
@@ -45,7 +58,12 @@ function process() {
 
             const projectName = p.textContent;
             const projGroupName = projGroupNameEl?.textContent || "";
-            createApp(OpenProjectButton, { href: repoUrl, projGroupName, projectName }).mount(buttonContainer);
+            createApp(OpenProjectButton, {
+                accountName: userInfo.githubLogin,
+                href: repoUrl,
+                projGroupName,
+                projectName,
+            }).mount(buttonContainer);
         });
     }
 }
@@ -55,7 +73,13 @@ function process() {
     console.info("[pulumi-consolepus] content script loaded");
 
     onMessage("tab-loaded", (data) => {
-        console.log("tab-loaded!");
+        const pulumiUserInfoCookie = Cookies.get("pulumi_user_info");
+        if (!pulumiUserInfoCookie) {
+            console.log("No Pulumi user info cookie found. Skipping...");
+            return;
+        }
+        const pulumiUserInfo = JSON.parse(pulumiUserInfoCookie.replace("j:", "")) as PulumiUserInfo;
+
         // mount component to context window
         // const container = document.createElement("div");
         // const root = document.createElement("div");
@@ -69,7 +93,6 @@ function process() {
         // const shadowDOM = container.attachShadow?.({ mode: __DEV__ ? "open" : "closed" }) || container;
         // shadowDOM.appendChild(styleEl);
         // shadowDOM.appendChild(root);
-
-        setTimeout(process, 1000);
+        setTimeout(() => process(pulumiUserInfo), 1000);
     });
 })();

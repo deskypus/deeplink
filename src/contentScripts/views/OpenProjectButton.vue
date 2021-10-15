@@ -16,6 +16,10 @@ import "virtual:windi.css";
 import "../style.scss";
 
 const props = defineProps({
+    accountName: {
+        type: String,
+        required: true,
+    },
     href: {
         type: String,
         required: true,
@@ -32,6 +36,7 @@ const props = defineProps({
 
 const formattedHref = computed(() => {
     const query = [];
+    query.push(`accountName=${props.accountName}`);
     query.push(`repo=${encodeURIComponent(props.href)}`);
     query.push(`projectGroupName=${props.projGroupName}`);
     query.push(`projectName=${props.projectName}`);
