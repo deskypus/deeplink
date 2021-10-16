@@ -1,6 +1,6 @@
-on: push
-
 name: CI
+
+on: [push, workflow_dispatch]
 
 jobs:
   build-and-pack:
