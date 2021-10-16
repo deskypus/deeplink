@@ -17,8 +17,8 @@
     "pack:zip": "rimraf extension.zip && jszip-cli add extension -o ./extension.zip",
     "pack:crx": "crx pack extension -o ./extension.crx",
     "pack:xpi": "cross-env WEB_EXT_ARTIFACTS_DIR=./ web-ext build --source-dir ./extension --filename extension.xpi --overwrite-dest",
-    "start:chromium": "web-ext run --source-dir ./extension --target=chromium",
-    "start:firefox": "web-ext run --source-dir ./extension --target=firefox-desktop",
+    "start:chromium": "web-ext run --start-url app.pulumi.com --source-dir ./extension --target=chromium",
+    "start:firefox": "cross-env WEB_EXT_FIREFOX_PROFILE=default-release web-ext run --start-url app.pulumi.com --source-dir ./extension --target=firefox-desktop",
     "clear": "rimraf extension/dist extension/manifest.json extension.*",
     "lint": "eslint 'src/**/*.{json,ts,js,vue}'"
   },

@@ -9,11 +9,9 @@ import packageJson from "./package.json";
 export default defineConfig({
     ...sharedConfig,
     build: {
-        watch: isDev
-            ? {
-                  include: [r("src/contentScripts/**/*"), r("src/components/**/*")],
-              }
-            : undefined,
+        watch: {
+            include: ["src/contentScripts/**/*", "src/components/**/*"],
+        },
         outDir: r("extension/dist/contentScripts"),
         cssCodeSplit: false,
         emptyOutDir: false,
