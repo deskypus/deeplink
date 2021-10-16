@@ -1,0 +1,22 @@
+on: push
+
+name: CI
+
+jobs:
+  build-and-pack:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Restore deps
+        run: yarn install
+
+      - name: Build and pack extension
+        run: yarn build && yarn run pack
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: dev-build
+          path: |
+            extension/**/*
+            extension.*
