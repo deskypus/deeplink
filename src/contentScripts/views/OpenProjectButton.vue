@@ -39,7 +39,6 @@ const formattedHref = computed(() => {
     query.push(`accountName=${props.accountName}`);
     query.push(`repo=${encodeURIComponent(props.href)}`);
     query.push(`projectGroupName=${props.projGroupName}`);
-    query.push(`projectName=${props.projectName}`);
-    return `pulumidesktop://projects?source=console&${query.join("&")}`;
+    return `pulumidesktop://projects/${props.projectName}?source=console&${query.join("&")}`;
 });
 </script>
