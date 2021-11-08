@@ -55,7 +55,7 @@
     "vite-plugin-windicss": "1.4.7",
     "vue": "3.2.21",
     "vue-demi": "0.12.1",
-    "web-ext": "6.4.0",
+    "web-ext": "6.5.0",
     "webext-bridge": "5.0.1",
     "webextension-polyfill": "0.8.0"
   }
