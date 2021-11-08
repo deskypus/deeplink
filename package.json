@@ -28,7 +28,7 @@
     "@types/node": "16.11.6",
     "@types/webextension-polyfill": "0.8.1",
     "@typescript-eslint/eslint-plugin": "5.3.1",
-    "@typescript-eslint/parser": "5.3.0",
+    "@typescript-eslint/parser": "5.3.1",
     "@vitejs/plugin-vue": "1.9.4",
     "@vue/compiler-sfc": "3.2.21",
     "@vue/eslint-config-prettier": "6.0.0",
