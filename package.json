@@ -24,7 +24,7 @@
   "devDependencies": {
     "@iconify/json": "1.1.428",
     "@types/fs-extra": "9.0.13",
-    "@types/js-cookie": "3.0.0",
+    "@types/js-cookie": "3.0.1",
     "@types/node": "16.11.7",
     "@types/webextension-polyfill": "0.8.1",
     "@typescript-eslint/eslint-plugin": "5.3.1",
