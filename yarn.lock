@@ -4655,17 +4655,17 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unplugin-auto-import@0.4.16:
-  version "0.4.16"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.4.16.tgz#44cb48a6d5195dd3cbd0b61c78040fae4cfc0df0"
-  integrity sha512-OuYzwHnhMOleSUlEXInMV7Y2yM1o4iY1qBQHN8MCQ2dNKdAAjUo4ln0kZy2me21q0GBJSgtmuelHrODZdCRPXQ==
+unplugin-auto-import@0.4.17:
+  version "0.4.17"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.4.17.tgz#5821855428385865ddce7f5ab2a8545753af7e70"
+  integrity sha512-qtuyAFrs3cwQSZYukthKrT0O2iVatxouc/DTEjlnbrZHxosQqXSLQgSM/cce4XWQW5Jh4iS01YmaHDcSxXTysQ==
   dependencies:
     "@antfu/utils" "^0.3.0"
     "@rollup/pluginutils" "^4.1.1"
     local-pkg "^0.4.0"
     magic-string "^0.25.7"
     resolve "^1.20.0"
-    unplugin "^0.2.15"
+    unplugin "^0.2.21"
 
 unplugin-icons@0.12.18:
   version "0.12.18"
@@ -4696,7 +4696,7 @@ unplugin-vue-components@0.17.2:
     resolve "^1.20.0"
     unplugin "^0.2.13"
 
-unplugin@^0.2.13, unplugin@^0.2.15:
+unplugin@^0.2.13:
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.2.16.tgz#6f34e9f5068ca3ec92a36b016f47b5ad8bb875ca"
   integrity sha512-KkXatHba0baJszSHW+2e8EQU/5Bz7rYwzYXu8wUeq97tE6K3wvub+7OWSuRv04LttvzNLsJ2jXEyR35gofv74Q==
@@ -4707,6 +4707,13 @@ unplugin@^0.2.18:
   version "0.2.20"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.2.20.tgz#fd579b8f302459eb1ae3616f71c2ba93e6076187"
   integrity sha512-CGnCaTqNjqeixpIlNEkpysxfR2hb4xv21xa4IURXnhYTfCp73UWuG0KcdanuhFJbwO5w+EGK4XaAaqdb/1vWbg==
+  dependencies:
+    webpack-virtual-modules "^0.4.3"
+
+unplugin@^0.2.21:
+  version "0.2.21"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.2.21.tgz#7852cddd9f78f0b32881812fd2efd5a39dcc64e5"
+  integrity sha512-IJ15/L5XbhnV7J09Zjk0FT5HEkBjkXucWAXQWRsmEtUxmmxwh23yavrmDbCF6ZPxWiVB28+wnKIHePTRRpQPbQ==
   dependencies:
     webpack-virtual-modules "^0.4.3"
 
