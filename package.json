@@ -29,7 +29,7 @@
     "@types/webextension-polyfill": "0.8.2",
     "@typescript-eslint/eslint-plugin": "5.4.0",
     "@typescript-eslint/parser": "5.4.0",
-    "@vitejs/plugin-vue": "1.10.0",
+    "@vitejs/plugin-vue": "1.10.1",
     "@vue/compiler-sfc": "3.2.23",
     "@vue/eslint-config-prettier": "6.0.0",
     "@vue/eslint-config-typescript": "9.1.0",
