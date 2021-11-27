@@ -48,7 +48,7 @@
     "rimraf": "3.0.2",
     "sass": "1.43.5",
     "typescript": "4.5.2",
-    "unplugin-auto-import": "0.4.19",
+    "unplugin-auto-import": "0.4.20",
     "unplugin-icons": "0.12.20",
     "unplugin-vue-components": "0.17.2",
     "vite": "2.6.14",
