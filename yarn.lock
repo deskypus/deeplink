@@ -184,6 +184,14 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@rollup/pluginutils@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.1.2.tgz#ed5821c15e5e05e32816f5fb9ec607cdf5a75751"
+  integrity sha512-ROn4qvkxP9SyPeHaf7uQC/GPFY6L/OWy9+bd9AwcjOAWQwxRscoEyAUD8qCY5o5iL4jqQwoLk2kaTKJPb/HwzQ==
+  dependencies:
+    estree-walker "^2.0.1"
+    picomatch "^2.2.2"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -4469,13 +4477,13 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unplugin-auto-import@0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.5.3.tgz#7eb5251b83075941ae2a316c735ddded50f3523d"
-  integrity sha512-jXs0rnKTS+/TyXOild6RkVp73yz1DeLXVJWR6VRn+oageEsvHgW6zofvc2BmpAm/pTSANxZ48kLi12wOa/iwdw==
+unplugin-auto-import@0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.5.4.tgz#7a75939bdaf58c79d30d8cfa4c1d45f5b34a1476"
+  integrity sha512-OxRsAGtg0yAYvJy8Sv5itAPt7erL2ya3gZeKTtpoY1miqOSOhGi8in3qHbov/kMejCxsXhvX39XWlIoMWVNR3Q==
   dependencies:
     "@antfu/utils" "^0.3.0"
-    "@rollup/pluginutils" "^4.1.1"
+    "@rollup/pluginutils" "^4.1.2"
     local-pkg "^0.4.0"
     magic-string "^0.25.7"
     resolve "^1.20.0"
