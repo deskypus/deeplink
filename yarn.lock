@@ -4496,10 +4496,10 @@ unplugin-icons@0.12.22:
     local-pkg "^0.4.0"
     unplugin "^0.2.21"
 
-unplugin-vue-components@0.17.8:
-  version "0.17.8"
-  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-0.17.8.tgz#16960d5761dc4ce73e70fcd4b76a708c38587eef"
-  integrity sha512-biyIE8TQwolK/ii3vu3xJ4w83+bliAgka3AuhU2cX5OOvJP+xuq39Skhf+BkNkZoY8xoeU65WHOgLFl//m3/YQ==
+unplugin-vue-components@0.17.10:
+  version "0.17.10"
+  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-0.17.10.tgz#232f0d9bbf3e6bd2747c1b44e3013cd4876afac2"
+  integrity sha512-7FXgLcDl+ZOFqezlSVPs+t4vP7hV3FhR+nOJs6IpkX7zBWHKNy1YeHSBn+By1p8vBbLLDRYDxL11KQqjrwPK3Q==
   dependencies:
     "@antfu/utils" "^0.3.0"
     "@rollup/pluginutils" "^4.1.1"
