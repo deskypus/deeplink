@@ -140,10 +140,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/json@1.1.451":
-  version "1.1.451"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-1.1.451.tgz#0b91594b18bcb53c7a89cd92783331efff74835b"
-  integrity sha512-A+GgU4xetmBfofDQSBNENRsbZo3vMZTF4pkCxFObWs+y9j/C/oGwJwqiV3yrU9jFecF/MkffBbwNFug8j5EAtw==
+"@iconify/json@1.1.452":
+  version "1.1.452"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-1.1.452.tgz#5baf7418ecaa5b8ebaa16bc526f5c0af4d355e98"
+  integrity sha512-3eUNfCvfap5dE4JUePnul+3wCuWMSqD1zC9oGHqob5FRbJ05tGQ/n0FsL7WthqO5C+dLaMUMNRRG5VRwMzyYfA==
 
 "@iconify/types@^1.0.12":
   version "1.0.12"
