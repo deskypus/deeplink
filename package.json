@@ -53,7 +53,7 @@
     "unplugin-icons": "0.13.0",
     "unplugin-vue-components": "0.17.13",
     "vite": "2.7.12",
-    "vite-plugin-windicss": "1.6.2",
+    "vite-plugin-windicss": "1.6.3",
     "vue": "3.2.27",
     "vue-demi": "0.12.1",
     "web-ext": "6.6.0",
