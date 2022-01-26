@@ -133,10 +133,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/json@1.1.460":
-  version "1.1.460"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-1.1.460.tgz#8d18feaba040972f292acdc3f101207a62899793"
-  integrity sha512-iPIJceykY8fmp7kjZGt6iWcicRKNFgeqYmsdXKnI7QmI+M/tuMOxn9qGV35RMFaB9ZOYGbQ90X3TM3hB9lX+ZA==
+"@iconify/json@1.1.461":
+  version "1.1.461"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-1.1.461.tgz#9e76f2339292e1a89855f93e497439afeb642f11"
+  integrity sha512-9Y41Tk9s3LDt4WI20XySNhNX6qTJ/WOBeE3O2iyoV9LJ6gFEDjp0uTPzfRU9NUx7D6VkvQ/htJEuRe9LmyMqUA==
 
 "@iconify/types@^1.0.12":
   version "1.0.12"
