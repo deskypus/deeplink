@@ -22,7 +22,7 @@
     "lint": "eslint 'src/**/*.{json,ts,js,vue}'"
   },
   "devDependencies": {
-    "@iconify/json": "1.1.460",
+    "@iconify/json": "1.1.461",
     "@rushstack/eslint-patch": "1.1.0",
     "@types/fs-extra": "9.0.13",
     "@types/js-cookie": "3.0.1",
