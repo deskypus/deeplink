@@ -1,8 +1,5 @@
 <template>
-    <main class="w-[300px] px-4 py-5 text-center text-gray-700">
-        <div>Pulumi Console Extension</div>
-        <button class="btn mt-2" @click="openOptionsPage">Open Options</button>
-    </main>
+    <main class="w-[300px] px-4 py-5 text-center text-gray-700">Nothing to see here at this time.</main>
 </template>
 
 <script setup lang="ts">

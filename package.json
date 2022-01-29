@@ -1,8 +1,8 @@
 {
-  "name": "pulumi-consolepus",
-  "displayName": "Pulumi Consolepus",
+  "name": "pul-it",
+  "displayName": "PulIt",
   "version": "0.0.1",
-  "description": "A browser extension for the Pulumi Console",
+  "description": "A browser extension to pull down Pulumi projects quickly",
   "private": true,
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
