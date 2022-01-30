@@ -9,7 +9,8 @@ Deeplink is a browser extension for the [Pulumi Console](https://app.pulumi.com)
 * Easily open any Pulumi project from your account on https://app.pulumi.com
 * Clone Pulumi projects from the VCS using SSH
 * Ensures that you have the right Pulumi account on your local machine in order to operate on the stacks
-* Pre-flight check for the providers in the project
+* Checks if the providers in your project are configured on your machine (aka pre-flight check)
+  * Only AWS and Azure are supported at this time. Support for more providers will be added later with newer versions of the Deskypus desktop app
 
 ## Prerequisites
 
