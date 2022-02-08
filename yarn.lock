@@ -4863,10 +4863,10 @@ web-ext@6.6.0:
     yargs "16.2.0"
     zip-dir "2.0.0"
 
-webext-bridge@5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/webext-bridge/-/webext-bridge-5.0.2.tgz#82fa32ef0da9b2cf9b01c32f2618bba59f658122"
-  integrity sha512-s0v1CXqjhwgkRsmyYpctcyHLw4J4gUJurIgfDMVzEMeuH9zO/iRhL/mGil5kXU4AHZextLpUQG2VUBv9Xhxo/w==
+webext-bridge@5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/webext-bridge/-/webext-bridge-5.0.3.tgz#3e785cbfeafd69501f2b5613c9441cd2a8f86e69"
+  integrity sha512-uGzFWi84oEFcOwBK0pxNTArP4aH6oYhainPHjjlem5rnMcVOZ+jK6Xid8hp93IjLEL7S1u1Wus+SGrLCJyld7w==
   dependencies:
     "@types/webextension-polyfill" "^0.8.2"
     nanoevents "^6.0.2"
