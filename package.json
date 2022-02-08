@@ -58,7 +58,7 @@
     "vue": "3.2.30",
     "vue-demi": "0.12.1",
     "web-ext": "6.6.0",
-    "webext-bridge": "5.0.2",
+    "webext-bridge": "5.0.3",
     "webextension-polyfill": "0.8.0"
   }
 }
