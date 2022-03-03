@@ -20,7 +20,7 @@ jobs:
         run: yarn build && yarn run pack
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dev-build
           path: |
