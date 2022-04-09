@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@iconify/json": "2.1.26",
-    "@rushstack/eslint-patch": "1.1.1",
+    "@rushstack/eslint-patch": "1.1.2",
     "@types/fs-extra": "9.0.13",
     "@types/js-cookie": "3.0.1",
     "@types/node": "16.11.26",
