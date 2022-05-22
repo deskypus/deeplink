@@ -4624,7 +4624,7 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
-tsx@^3.4.0:
+tsx@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.4.0.tgz#20aed3831464c0183396d7c4f7c813a8c8429647"
   integrity sha512-WWakMoC5OqUXvOVZuyAySyETjAZ9rJxZXRbbOhYXDCeHF95hQUBa07UwUFu1yprlnrJ/W7XWfA99YTNKO//KxQ==
