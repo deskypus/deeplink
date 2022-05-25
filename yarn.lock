@@ -83,27 +83,27 @@
     node-forge "^0.10.0"
     split "~0.3.3"
 
-"@esbuild-kit/cjs-loader@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/cjs-loader/-/cjs-loader-2.0.0.tgz#f385aed0ba482cb9de28880e7401259311cacbd7"
-  integrity sha512-1ijCpmiCQcOcr0dmwwwCpzv0inWpNtEgiXDWc74AL52AhvY108M26suhWe9PMDcF1esnPJf0YSeVBLLZS6SQvg==
+"@esbuild-kit/cjs-loader@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/cjs-loader/-/cjs-loader-2.0.1.tgz#3684cb94a79ce19eb73c76e9d79547634732dcc3"
+  integrity sha512-KmE8XouKm6m05jPIsf5CTIZZ4171GHd+PUts1mtti2tzoiD228qCRjpkCwg540c3fMUweKupO+PIpkJ9+Z7vPg==
   dependencies:
-    "@esbuild-kit/core-utils" "^1.1.0"
+    "@esbuild-kit/core-utils" "^1.2.0"
     get-tsconfig "^3.0.1"
 
-"@esbuild-kit/core-utils@^1.1.0", "@esbuild-kit/core-utils@^1.1.1", "@esbuild-kit/core-utils@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/core-utils/-/core-utils-1.1.2.tgz#42e2bdccd61e8ff43b3015e617602122379e9a7f"
-  integrity sha512-t5uqG23MYDR0e664jP4B6aPXnX1/mJVxbvJKgQDMzOS3NblKZEwwOG1D/JM7Sju+R+gpV6fD1N7L3ouHCLTAAA==
+"@esbuild-kit/core-utils@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/core-utils/-/core-utils-1.2.0.tgz#3a9d01e69f82c415c961e7e5a3052a886a15475f"
+  integrity sha512-C+WS7LupKIvf/3hx6qHzHMroGI9Ypqvainghcuq8Le5LL8VA0lgZEG8sEa5YMuWEBvImHTJ6kBCNFws+bTbMjw==
   dependencies:
     esbuild "0.14.38"
 
-"@esbuild-kit/esm-loader@^2.1.0":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/esm-loader/-/esm-loader-2.1.1.tgz#b0f98cf1ac553f0b6bc9354214c5ce2457629b66"
-  integrity sha512-SzB7wsSsKZToEvP29gslW6cjudrABMe6q4ZuDk9SDahdWg8QPo3HelLJu97VglhfVXm3gS6iCZbXyfjIWK6LHg==
+"@esbuild-kit/esm-loader@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/esm-loader/-/esm-loader-2.1.2.tgz#b8fb9addd82920df9bb3b391ce475889d10dae60"
+  integrity sha512-7p6ftgLQIZKIXV3KdOsQ4pYL6lJHc7mNfWTZBp+nI7ceVvxJwe1VoaQAP0zA81zadUoX5DsGi9RXMTxu1uYt7w==
   dependencies:
-    "@esbuild-kit/core-utils" "^1.1.2"
+    "@esbuild-kit/core-utils" "^1.2.0"
     es-module-lexer "^0.10.5"
     get-tsconfig "^3.0.1"
 
@@ -4671,14 +4671,14 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
-tsx@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.4.0.tgz#20aed3831464c0183396d7c4f7c813a8c8429647"
-  integrity sha512-WWakMoC5OqUXvOVZuyAySyETjAZ9rJxZXRbbOhYXDCeHF95hQUBa07UwUFu1yprlnrJ/W7XWfA99YTNKO//KxQ==
+tsx@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.4.1.tgz#463808d768673b63f0875303052fa14909cd0bd3"
+  integrity sha512-ksemgcHyR+35wmPWyWBnZPCyPjt+vZj0DIo7Ze6dJzA9zoPo6LVRx/JgJ+hsGgVhFxLsZhTgqORZQORc2WOzKA==
   dependencies:
-    "@esbuild-kit/cjs-loader" "^2.0.0"
-    "@esbuild-kit/core-utils" "^1.1.1"
-    "@esbuild-kit/esm-loader" "^2.1.0"
+    "@esbuild-kit/cjs-loader" "^2.0.1"
+    "@esbuild-kit/core-utils" "^1.2.0"
+    "@esbuild-kit/esm-loader" "^2.1.2"
   optionalDependencies:
     fsevents "~2.3.2"
 
