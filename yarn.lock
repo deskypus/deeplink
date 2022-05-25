@@ -98,10 +98,10 @@
   dependencies:
     esbuild "0.14.38"
 
-"@esbuild-kit/esm-loader@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/esm-loader/-/esm-loader-2.1.2.tgz#b8fb9addd82920df9bb3b391ce475889d10dae60"
-  integrity sha512-7p6ftgLQIZKIXV3KdOsQ4pYL6lJHc7mNfWTZBp+nI7ceVvxJwe1VoaQAP0zA81zadUoX5DsGi9RXMTxu1uYt7w==
+"@esbuild-kit/esm-loader@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/esm-loader/-/esm-loader-2.1.3.tgz#fb40539f909bdc0140f8b1bf22a67a86610015a6"
+  integrity sha512-cpETLDjAUa1swka6liurVBsFLUzZihR7Nxl4q5DywwD6XGPIQr+frTcSxXi9TIm5oeDoi+4i/d+L4YOanLSIBQ==
   dependencies:
     "@esbuild-kit/core-utils" "^1.2.0"
     es-module-lexer "^0.10.5"
@@ -4671,14 +4671,14 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
-tsx@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.4.1.tgz#463808d768673b63f0875303052fa14909cd0bd3"
-  integrity sha512-ksemgcHyR+35wmPWyWBnZPCyPjt+vZj0DIo7Ze6dJzA9zoPo6LVRx/JgJ+hsGgVhFxLsZhTgqORZQORc2WOzKA==
+tsx@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.4.2.tgz#6197b57a07dbaad5bcdc7e1a5a1be4fc88bdb64d"
+  integrity sha512-Rd1gm2noOUiVynF+VFxo4bVBNbzS6haWKWtlQ0bEfCLLEqm+GG3R98D3Rqk6foQ3NnJk6JAWOx1ragwcAPj4Lg==
   dependencies:
     "@esbuild-kit/cjs-loader" "^2.0.1"
     "@esbuild-kit/core-utils" "^1.2.0"
-    "@esbuild-kit/esm-loader" "^2.1.2"
+    "@esbuild-kit/esm-loader" "^2.1.3"
   optionalDependencies:
     fsevents "~2.3.2"
 
