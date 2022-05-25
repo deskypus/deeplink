@@ -4775,10 +4775,10 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unplugin-auto-import@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.8.2.tgz#9a45f566819607cf99d4ccb126839a177a514a07"
-  integrity sha512-iZjJ+3HEU3dn79SDDfgU0uVP6fGjufP4SnpU26pRVvTSLvh/en5YgTS8tNI06zWIwGhjYPruprtlbwV8SEQs8Q==
+unplugin-auto-import@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.8.4.tgz#49fdae0ef316f722aed6ee9ca2cfbf8264c9f241"
+  integrity sha512-YtUN80CzPBLK6qrzONQ0WWg191A0MMERq1nxcVSH+kUkKbs7L2QFiRv9eZrk3Rf9oe7hk0gLfYH85b1bPUG2yA==
   dependencies:
     "@antfu/utils" "^0.5.2"
     "@rollup/pluginutils" "^4.2.1"
