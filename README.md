@@ -4,7 +4,7 @@ Deeplink is a browser extension for the [Pulumi Console](https://app.pulumi.com)
 
 :warning: This project is in preview status. Anything about this extension is subject to change without prior notice.
 
-[!Demo](./demo.mp4)
+![Demo](./demo.mp4)
 
 ## Features
 
