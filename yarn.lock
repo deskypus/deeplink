@@ -4875,17 +4875,17 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unplugin-auto-import@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.11.0.tgz#f4e39bd88056cfcd6763102b544921fa8f9ff74f"
-  integrity sha512-uIGNwIiuf6vdgGExvfVgaYKpRjeUZDNmCEvRvAwlwsOfiSiIkmQIq2TSPKcHGcP5OBD3k+PAP28qIs7m2ozzzg==
+unplugin-auto-import@0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.11.1.tgz#c77b0e29890ea5efd013a6f893d436765462e9f0"
+  integrity sha512-3KMbjc3Sv2h1osgQ16uKmD2XHb8MLK3Lj5Twzo3x2vDexYdNKjVljLZUX+eT5cvh2f1VzJR77dkzDhdEi9+1uw==
   dependencies:
     "@antfu/utils" "^0.5.2"
     "@rollup/pluginutils" "^4.2.1"
     local-pkg "^0.4.2"
     magic-string "^0.26.2"
     unimport "^0.6.5"
-    unplugin "^0.8.1"
+    unplugin "^0.9.0"
 
 unplugin-icons@0.14.8:
   version "0.14.8"
@@ -4930,6 +4930,16 @@ unplugin@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.8.1.tgz#4517b6a8ec3d944e838f9c346921d9777cd159e1"
   integrity sha512-o7rUZoPLG1fH4LKinWgb77gDtTE6mw/iry0Pq0Z5UPvZ9+HZ1/4+7fic7t58s8/CGkPrDpGq+RltO+DmswcR4g==
+  dependencies:
+    acorn "^8.8.0"
+    chokidar "^3.5.3"
+    webpack-sources "^3.2.3"
+    webpack-virtual-modules "^0.4.4"
+
+unplugin@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.9.0.tgz#ebad287d61aa1b1f16de60feea74e8dd12224819"
+  integrity sha512-6o7q8Y9yxdPi5yCPmRuFfeNnVzGumRNZSK6hIkvZ6hd0cfigVdm0qBx/GgQ/NEjs54eUV1qTjvMYKRs9yh3rzw==
   dependencies:
     acorn "^8.8.0"
     chokidar "^3.5.3"
