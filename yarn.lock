@@ -28,6 +28,11 @@
   resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.6.0.tgz#c555b859843127853ffbe1adde25f6a365daa820"
   integrity sha512-VauUKmo22NYo3y6fIjGjVU7LJyhaedYL9kyabdvIIIl7P+qbNPbQiaLwwk4UOU4McFfA2eg+aIWpEYhkHzsE9Q==
 
+"@antfu/utils@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.6.2.tgz#7702df28b999db92e412b7ddbbfdc81dfcfc7797"
+  integrity sha512-Qdwda+qE1KOKXuM8Gnn09zIJSA293J5putdHBx4J9sdbHzqp5QY4OmH77KgwJoi0PuY+kbddkVVdkSoZ9ruiug==
+
 "@babel/code-frame@^7.16.0":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
@@ -4843,18 +4848,18 @@ unplugin-auto-import@0.11.4:
     unimport "^0.7.0"
     unplugin "^0.10.2"
 
-unplugin-icons@0.14.12:
-  version "0.14.12"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.14.12.tgz#6ebd7a79bd0b1a3d21d71a358f26ea9aac3640a7"
-  integrity sha512-FdkjDnUnc8/75OT8Ywwm8iDyG6kO8w1uHfFbnO2Jh7JhpE0odKhCqaAOmEE/UlvYDYSm5D4X1DKdWMwpAxj07Q==
+unplugin-icons@0.14.13:
+  version "0.14.13"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.14.13.tgz#6d3882a25f4614447fed4489a18b1ccde5031ea3"
+  integrity sha512-ZZCw9qZg/zNJeHWicaFYMfsfzMAXOHHnZt5tRxslhPE++/THvg5xGu5AsIRmMCtyNBCpC1Ly1MTb8CZmlqaQTA==
   dependencies:
     "@antfu/install-pkg" "^0.1.1"
-    "@antfu/utils" "^0.5.2"
+    "@antfu/utils" "^0.6.2"
     "@iconify/utils" "^2.0.1"
     debug "^4.3.4"
     kolorist "^1.6.0"
     local-pkg "^0.4.2"
-    unplugin "^0.9.6"
+    unplugin "^0.10.2"
 
 unplugin-vue-components@0.22.9:
   version "0.22.9"
@@ -4886,16 +4891,6 @@ unplugin@^0.10.2:
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.10.2.tgz#0f7089c3666f592cc448d746e39e7f41e9afb01a"
   integrity sha512-6rk7GUa4ICYjae5PrAllvcDeuT8pA9+j5J5EkxbMFaV+SalHhxZ7X2dohMzu6C3XzsMT+6jwR/+pwPNR3uK9MA==
-  dependencies:
-    acorn "^8.8.0"
-    chokidar "^3.5.3"
-    webpack-sources "^3.2.3"
-    webpack-virtual-modules "^0.4.5"
-
-unplugin@^0.9.6:
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.9.6.tgz#f449173b619b9970bf3190d5419a66a727bb5d18"
-  integrity sha512-YYLtfoNiie/lxswy1GOsKXgnLJTE27la/PeCGznSItk+8METYZErO+zzV9KQ/hXhPwzIJsfJ4s0m1Rl7ZCWZ4Q==
   dependencies:
     acorn "^8.8.0"
     chokidar "^3.5.3"
