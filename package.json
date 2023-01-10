@@ -24,7 +24,7 @@
   "devDependencies": {
     "@iconify/json": "2.2.4",
     "@rushstack/eslint-patch": "1.2.0",
-    "@types/fs-extra": "11.0.0",
+    "@types/fs-extra": "11.0.1",
     "@types/js-cookie": "3.0.2",
     "@types/node": "18.11.18",
     "@types/webextension-polyfill": "0.9.2",
