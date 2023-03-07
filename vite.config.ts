@@ -1,12 +1,16 @@
 import { dirname, relative } from "path";
 import { defineConfig, UserConfig } from "vite";
+
 import Vue from "@vitejs/plugin-vue";
+
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
+
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
-import WindiCSS from "vite-plugin-windicss";
-import windiConfig from "./windi.config";
+
+import UnoCSS from "unocss/vite";
+
 import { r, port, isDev } from "./scripts/utils";
 
 import { FileSystemIconLoader } from "unplugin-icons/loaders";
@@ -54,6 +58,9 @@ export const sharedConfig: UserConfig = {
             },
         }),
 
+        // https://github.com/unocss/unocss
+        UnoCSS(),
+
         // rewrite assets to use relative path
         {
             name: "assets-rewrite",
@@ -95,12 +102,5 @@ export default defineConfig(({ command }) => ({
             },
         },
     },
-    plugins: [
-        ...sharedConfig.plugins!,
-
-        // https://github.com/antfu/vite-plugin-windicss
-        WindiCSS({
-            config: windiConfig,
-        }),
-    ],
+    plugins: sharedConfig.plugins,
 }));
