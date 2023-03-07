@@ -3,8 +3,11 @@ import { defineConfig, UserConfig } from "vite";
 
 import Vue from "@vitejs/plugin-vue";
 
+import replace from "@rollup/plugin-replace";
+
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
+import { FileSystemIconLoader } from "unplugin-icons/loaders";
 
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -12,8 +15,6 @@ import AutoImport from "unplugin-auto-import/vite";
 import UnoCSS from "unocss/vite";
 
 import { r, port, isDev } from "./scripts/utils";
-
-import { FileSystemIconLoader } from "unplugin-icons/loaders";
 
 export const sharedConfig: UserConfig = {
     root: r("src"),
@@ -61,6 +62,13 @@ export const sharedConfig: UserConfig = {
         // https://github.com/unocss/unocss
         UnoCSS(),
 
+        replace({
+            __DEV__: JSON.stringify(isDev),
+            "process.env.NODE_ENV": JSON.stringify(isDev ? "development" : "production"),
+            __VUE_OPTIONS_API__: JSON.stringify(true),
+            __VUE_PROD_DEVTOOLS__: JSON.stringify(false),
+        }),
+
         // rewrite assets to use relative path
         {
             name: "assets-rewrite",
@@ -93,7 +101,6 @@ export default defineConfig(({ command }) => ({
         minify: "esbuild",
         rollupOptions: {
             input: {
-                background: r("src/background/index.html"),
                 options: r("src/options/index.html"),
                 popup: r("src/popup/index.html"),
             },

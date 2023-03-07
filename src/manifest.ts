@@ -1,6 +1,9 @@
 import fs from "fs-extra";
+
 import type { Manifest } from "webextension-polyfill";
+
 import type PkgType from "../package.json";
+
 import { isDev, port, r } from "../scripts/utils";
 
 export async function getManifest() {
@@ -23,7 +26,7 @@ export async function getManifest() {
             // chrome_style: false,
         },
         background: {
-            service_worker: "./dist/background/index.html",
+            service_worker: "./dist/background/index.mjs",
         },
         icons: {
             16: "./assets/icon_16@2x.png",
@@ -38,6 +41,12 @@ export async function getManifest() {
                 js: ["./dist/contentScripts/index.global.js"],
             },
         ],
+        content_security_policy: {
+            extension_pages: isDev
+                ? // this is required on dev for Vite script to load
+                  `script-src 'self' http://localhost:${port}; object-src 'self' http://localhost:${port}`
+                : "script-src 'self'; object-src 'self'",
+        },
         web_accessible_resources: [
             {
                 resources: ["dist/contentScripts/style.css"],
