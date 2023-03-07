@@ -70,9 +70,9 @@ function process(userInfo: PulumiUserInfo) {
 
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
 (() => {
-    console.info("[pulumi-consolepus] content script loaded");
+    console.info("[pulumi-console-extension] content script loaded");
 
-    onMessage("tab-loaded", (data) => {
+    onMessage("tab-loaded", (_data) => {
         const pulumiUserInfoCookie = Cookies.get("pulumi_user_info");
         if (!pulumiUserInfoCookie) {
             console.log("No Pulumi user info cookie found. Skipping...");

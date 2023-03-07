@@ -1,15 +1,20 @@
 import { dirname, relative } from "path";
 import { defineConfig, UserConfig } from "vite";
+
 import Vue from "@vitejs/plugin-vue";
+
+import replace from "@rollup/plugin-replace";
+
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
+import { FileSystemIconLoader } from "unplugin-icons/loaders";
+
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
-import WindiCSS from "vite-plugin-windicss";
-import windiConfig from "./windi.config";
-import { r, port, isDev } from "./scripts/utils";
 
-import { FileSystemIconLoader } from "unplugin-icons/loaders";
+import UnoCSS from "unocss/vite";
+
+import { r, port, isDev } from "./scripts/utils";
 
 export const sharedConfig: UserConfig = {
     root: r("src"),
@@ -28,7 +33,7 @@ export const sharedConfig: UserConfig = {
             imports: [
                 "vue",
                 {
-                    "webextension-polyfill": [["default", "browser"]],
+                    "webextension-polyfill": [["*", "browser"]],
                 },
             ],
             dts: r("src/auto-imports.d.ts"),
@@ -52,6 +57,16 @@ export const sharedConfig: UserConfig = {
             customCollections: {
                 logos: FileSystemIconLoader("./extension/assets"),
             },
+        }),
+
+        // https://github.com/unocss/unocss
+        UnoCSS(),
+
+        replace({
+            __DEV__: JSON.stringify(isDev),
+            "process.env.NODE_ENV": JSON.stringify(isDev ? "development" : "production"),
+            __VUE_OPTIONS_API__: JSON.stringify(true),
+            __VUE_PROD_DEVTOOLS__: JSON.stringify(false),
         }),
 
         // rewrite assets to use relative path
@@ -83,24 +98,13 @@ export default defineConfig(({ command }) => ({
         outDir: r("extension/dist"),
         emptyOutDir: false,
         sourcemap: isDev ? "inline" : false,
-        // https://developer.chrome.com/docs/webstore/program_policies/#:~:text=Code%20Readability%20Requirements
-        terserOptions: {
-            mangle: false,
-        },
+        minify: "esbuild",
         rollupOptions: {
             input: {
-                background: r("src/background/index.html"),
                 options: r("src/options/index.html"),
                 popup: r("src/popup/index.html"),
             },
         },
     },
-    plugins: [
-        ...sharedConfig.plugins!,
-
-        // https://github.com/antfu/vite-plugin-windicss
-        WindiCSS({
-            config: windiConfig,
-        }),
-    ],
+    plugins: sharedConfig.plugins,
 }));
