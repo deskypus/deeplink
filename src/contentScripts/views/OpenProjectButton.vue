@@ -12,7 +12,7 @@
     </a>
 </template>
 <script setup lang="ts">
-import "virtual:windi.css";
+import "uno.css";
 import "../style.scss";
 
 const props = defineProps({
