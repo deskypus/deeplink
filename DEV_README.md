@@ -16,7 +16,7 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
 - ⚡️ **Instant HMR** - use **Vite** on dev (no more refresh!)
 - 🥝 Vue 3 - Composition API, [`<script setup>` syntax](https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md) and more!
 - 💬 Effortless communications - powered by [`webext-bridge`](https://github.com/antfu/webext-bridge) and [VueUse](https://github.com/antfu/vueuse) storage
-- 🍃 [Windi CSS](https://windicss.org/) - on-demand CSS utilities
+- 🌈 [UnoCSS](https://github.com/unocss/unocss) - The instant on-demand Atomic CSS engine.
 - 🦾 [TypeScript](https://www.typescriptlang.org/) - type safe
 - 📦 [Components auto importing](./src/components)
 - 🌟 [Icons](./src/components) - Access to icons from any iconset directly
@@ -45,7 +45,7 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS framework
+- [UnoCSS](https://github.com/unocss/unocss) - the instant on-demand Atomic CSS engine
 
 ### Coding Style
 
@@ -69,9 +69,8 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
   - `components` - auto-imported Vue components that shared in popup and options page.
   - `styles` - styles shared in popup and options page
   - `manifest.ts` - manifest for the extension.
+- `assets` - static assets (mainly for `manifest.json`).
 - `extension` - extension package root.
-  - `assets` - static assets.
-  - `dist` - built files, also serve stub entry for Vite on development.
 - `scripts` - development and bundling helper scripts.
 
 ### Development
@@ -104,7 +103,7 @@ And then pack files under `extension`, you can upload `extension.crx` or `extens
 
 ## Credits
 
-![](https://user-images.githubusercontent.com/11247099/127029137-6b5ad5db-76c4-4061-86ff-489911a8adfb.png)
+[![Volta](https://user-images.githubusercontent.com/904724/195351818-9e826ea9-12a0-4b06-8274-352743cd2047.png)](https://volta.net)
 
 This template is originally made for the [volta.net](https://volta.net) browser extension.
 

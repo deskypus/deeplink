@@ -1,8 +1,3 @@
 {
-  "recommendations": [
-    "antfu.iconify",
-    "dbaeumer.vscode-eslint",
-    "voorjaar.windicss-intellisense",
-    "csstools.postcss"
-  ]
+    "recommendations": ["antfu.iconify", "dbaeumer.vscode-eslint", "csstools.postcss", "Vue.volar"]
 }
