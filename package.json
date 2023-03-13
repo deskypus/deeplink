@@ -52,7 +52,7 @@
     "sass": "1.59.1",
     "terser": "^5.16.5",
     "tsup": "^6.6.3",
-    "tsx": "3.12.4",
+    "tsx": "3.12.5",
     "typescript": "4.9.5",
     "unocss": "^0.50.4",
     "unplugin-auto-import": "0.15.1",
