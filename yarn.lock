@@ -419,18 +419,6 @@
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
 
-"@iconify/utils@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.2.tgz#5be27198ed9a9b5cb6d4ef381d3606e670f2b4f6"
-  integrity sha512-SM5vvo30FlLMI5zOQ+ZrTI/CerdQa8icocnDl8rKPgy3evqw4mgw0qAYT2bnbvtlh0+F5cPwG2scnOb1kWBc9w==
-  dependencies:
-    "@antfu/install-pkg" "^0.1.1"
-    "@antfu/utils" "^0.7.2"
-    "@iconify/types" "^2.0.0"
-    debug "^4.3.4"
-    kolorist "^1.7.0"
-    local-pkg "^0.4.3"
-
 "@iconify/utils@^2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.5.tgz#75c17410aadec724d2ab7bd71e8710e448102438"
@@ -5677,18 +5665,18 @@ unplugin-auto-import@0.15.2:
     unimport "^3.0.3"
     unplugin "^1.3.1"
 
-unplugin-icons@0.15.3:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.15.3.tgz#0d7d0cbcd6c420c2638d6a95f9929e75e66f86e6"
-  integrity sha512-YWgJqv5AahrokeOnta8uX/m1damZA6Rf6zPClgHg2Fa/45iyOe3Lj+Wn/Ba+CSsq9yBffn17YfKfJNyWCNZPvw==
+unplugin-icons@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.16.0.tgz#5c49735f3abe6ff0440eba753b291e6f2cc2f88a"
+  integrity sha512-1YDsaMmJDVj9JDffpDrngWvrVtZZeZDHvyDqKEx4O9aQNiS4jRlGC7B14IKy91aHtBZ8/Q3RiF2YrjsyFgGO/A==
   dependencies:
     "@antfu/install-pkg" "^0.1.1"
     "@antfu/utils" "^0.7.2"
-    "@iconify/utils" "^2.1.2"
+    "@iconify/utils" "^2.1.5"
     debug "^4.3.4"
     kolorist "^1.7.0"
     local-pkg "^0.4.3"
-    unplugin "^1.0.1"
+    unplugin "^1.3.1"
 
 unplugin-vue-components@0.24.1:
   version "0.24.1"
@@ -5705,16 +5693,6 @@ unplugin-vue-components@0.24.1:
     minimatch "^7.4.2"
     resolve "^1.22.1"
     unplugin "^1.1.0"
-
-unplugin@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.0.1.tgz#83b528b981cdcea1cad422a12cd02e695195ef3f"
-  integrity sha512-aqrHaVBWW1JVKBHmGo33T5TxeL0qWzfvjWokObHA9bYmN7eNDkwOxmLjhioHl9878qDFMAaT51XNroRyuz7WxA==
-  dependencies:
-    acorn "^8.8.1"
-    chokidar "^3.5.3"
-    webpack-sources "^3.2.3"
-    webpack-virtual-modules "^0.5.0"
 
 unplugin@^1.1.0:
   version "1.1.0"
