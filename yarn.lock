@@ -5745,10 +5745,10 @@ unplugin-auto-import@0.15.2:
     unimport "^3.0.3"
     unplugin "^1.3.1"
 
-unplugin-icons@0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.16.0.tgz#5c49735f3abe6ff0440eba753b291e6f2cc2f88a"
-  integrity sha512-1YDsaMmJDVj9JDffpDrngWvrVtZZeZDHvyDqKEx4O9aQNiS4jRlGC7B14IKy91aHtBZ8/Q3RiF2YrjsyFgGO/A==
+unplugin-icons@0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.16.1.tgz#e341185e17f4a7a9171b6dd932b5bf26a2f31fb9"
+  integrity sha512-qTunFUkpAyDnwzwV7YV1ZgCWRYfLuURcCurhhXOWMy2ipY88qx1pADvral2hJu4Xymh0X0t3Zcll3BIru2AVLQ==
   dependencies:
     "@antfu/install-pkg" "^0.1.1"
     "@antfu/utils" "^0.7.2"
