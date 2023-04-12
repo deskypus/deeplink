@@ -25,7 +25,6 @@ jobs:
       - run: |
           yarn install
           yarn run build
-          yarn run pack
 
       - name: Create tag if necessary
         uses: fregante/daily-version-action@v2
