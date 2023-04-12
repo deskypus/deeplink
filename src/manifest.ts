@@ -33,7 +33,7 @@ export async function getManifest() {
             48: "./assets/icon_48@2x.png",
             128: "./assets/icon_128@2x.png",
         },
-        permissions: ["tabs", "storage", "activeTab"],
+        permissions: ["tabs", "activeTab"],
         host_permissions: ["https://app.pulumi.com/*"],
         content_scripts: [
             {
