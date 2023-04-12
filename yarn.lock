@@ -868,12 +868,7 @@
     "@unocss/core" "0.51.4"
     "@unocss/preset-mini" "0.51.4"
 
-"@unocss/reset@0.51.4":
-  version "0.51.4"
-  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.51.4.tgz#e012e3109ba73f971140df67f801e035e96a2091"
-  integrity sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==
-
-"@unocss/reset@^0.51.0":
+"@unocss/reset@0.51.4", "@unocss/reset@^0.51.0":
   version "0.51.4"
   resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.51.4.tgz#e012e3109ba73f971140df67f801e035e96a2091"
   integrity sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==
@@ -5004,10 +4999,10 @@ safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@1.61.0:
-  version "1.61.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.61.0.tgz#d1f6761bb833887b8fdab32a24e052c40531d02b"
-  integrity sha512-PDsN7BrVkNZK2+dj/dpKQAWZavbAQ87IXqVvw2+oEYI+GwlTWkvbQtL7F2cCNbMqJEYKPh1EcjSxsnqIb/kyaQ==
+sass@1.62.0:
+  version "1.62.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.62.0.tgz#3686b2195b93295d20765135e562366b33ece37d"
+  integrity sha512-Q4USplo4pLYgCi+XlipZCWUQz5pkg/ruSSgJ0WRDSb/+3z9tXUOkQ7QPYn4XrhZKYAK4HlpaQecRwKLJX6+DBg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
