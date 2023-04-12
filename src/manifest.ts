@@ -26,7 +26,7 @@ export async function getManifest() {
             // chrome_style: false,
         },
         background: {
-            service_worker: "./dist/background/index.mjs",
+            service_worker: "./dist/background/index.js",
         },
         icons: {
             16: "./assets/icon_16@2x.png",
