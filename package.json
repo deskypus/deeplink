@@ -1,7 +1,7 @@
 {
   "name": "deeplink",
   "displayName": "Deeplink",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pull down Pulumi projects directly from the Pulumi Console. Requires the companion desktop app for Pulumi called Deskypus.",
   "private": true,
   "type": "module",
