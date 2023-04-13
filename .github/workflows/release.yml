@@ -11,7 +11,13 @@ env:
   PROJECT_NAME: deeplink
 
 jobs:
-  Version:
+  Build:
+    strategy:
+      fail-fast: false
+      matrix:
+        command:
+          - Firefox
+          - Chrome
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,26 +27,50 @@ jobs:
           node-version: 16.x
           cache: yarn
 
-      - run: |
-          yarn install
-          yarn run build
+      - name: Restore deps
+        run: yarn install
+
+      - name: Build for Chrome
+        if: matrix.command == 'Chrome'
+        run: yarn run build
+
+      - name: Build for Firefox
+        if: matrix.command == 'Firefox'
+        run: yarn run build:firefox
 
       - name: Ready for "submit" jobs
         uses: actions/upload-artifact@v3
         with:
           path: ${{ env.DIRECTORY }}
+          name: ${{ env.DIRECTORY }}-${{ matrix.command }}
+          if-no-files-found: error
+
+  Release:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
 
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ${{ env.DIRECTORY }}
+        working-directory: ${{ env.DIRECTORY }}-Chrome
         run: |
-          FILENAME="$PROJECT_NAME-${GITHUB_REF_NAME}-for-local-testing-only.zip"
+          FILENAME="$PROJECT_NAME-${GITHUB_REF_NAME}-Chrome-for-local-testing-only.zip"
           zip -r "$FILENAME" ./*
           gh release create "${GITHUB_REF_NAME}" --generate-notes "$FILENAME"
 
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ${{ env.DIRECTORY }}-Firefox
+        run: |
+          FILENAME="$PROJECT_NAME-${GITHUB_REF_NAME}-Firefox-for-local-testing-only.zip"
+          zip -r "$FILENAME" ./*
+          gh release upload "${GITHUB_REF_NAME}" "$FILENAME"
+
   # Submit:
-  #   needs: Version
+  #   needs: [Build, Release]
   #   strategy:
   #     fail-fast: false
   #     matrix:
@@ -54,7 +84,7 @@ jobs:
 
   #     - name: Submit to Mozilla
   #       if: matrix.command == 'Firefox'
-  #       working-directory: artifact
+  #       working-directory: artifact-${{ matrix.command }}
   #       run: npx web-ext-submit@7
   #       env:
   #         WEB_EXT_API_KEY: ${{ secrets.WEB_EXT_API_KEY }}
@@ -62,7 +92,7 @@ jobs:
 
   #     - name: Submit to Google
   #       if: matrix.command == 'Chrome'
-  #       working-directory: artifact
+  #       working-directory: artifact-${{ matrix.command }}
   #       run: npx chrome-webstore-upload-cli@2 upload --auto-publish
   #       env:
   #         EXTENSION_ID: ${{ secrets.EXTENSION_ID }}
