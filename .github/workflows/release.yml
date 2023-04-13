@@ -49,6 +49,11 @@ jobs:
     needs: Build
     runs-on: ubuntu-latest
     steps:
+      # The checkout step is needed so that the GitHub CLI
+      # can lookup some git config stuff in order to create
+      # the release.
+      - uses: actions/checkout@v3
+
       - uses: actions/download-artifact@v3
 
       - name: Create release
@@ -60,7 +65,7 @@ jobs:
           zip -r "$FILENAME" ./*
           gh release create "${GITHUB_REF_NAME}" --notes "See [CHANGELOG.md](https://github.com/deskypus/deeplink/blob/${GITHUB_REF_NAME}/CHANGELOG.md)." "$FILENAME"
 
-      - name: Create release
+      - name: Upload firefox artifact to GH release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: ${{ env.DIRECTORY }}-Firefox
