@@ -19,7 +19,8 @@
     "start:chromium": "web-ext run --start-url app.pulumi.com --source-dir ./extension --target=chromium",
     "start:firefox": "cross-env WEB_EXT_FIREFOX_PROFILE=default-release web-ext run --start-url app.pulumi.com --source-dir ./extension --target=firefox-desktop",
     "clear": "rimraf extension/dist extension/manifest.json extension.*",
-    "lint": "eslint 'src/**/*.{json,ts,js,vue}'"
+    "lint": "eslint 'src/**/*.{json,ts,js,vue}'",
+    "release": "git fetch && npx standard-version"
   },
   "devDependencies": {
     "@iconify/json": "2.2.49",
