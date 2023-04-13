@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/deskypus/deeplink/compare/v0.0.3...v0.0.4) (2023-04-13)
+
+
+### Bug Fixes
+
+* Fix errors in browser_specific_settings for Firefox manifest ([e753606](https://github.com/deskypus/deeplink/commit/e75360696136bcd5e8625b8c44a3cd82742cd79f))
+
 ### [0.0.3](https://github.com/deskypus/deeplink/compare/v0.0.2...v0.0.3) (2023-04-13)
 
 
