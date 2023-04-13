@@ -58,7 +58,7 @@ jobs:
         run: |
           FILENAME="$PROJECT_NAME-${GITHUB_REF_NAME}-Chrome-for-local-testing-only.zip"
           zip -r "$FILENAME" ./*
-          gh release create "${GITHUB_REF_NAME}" --generate-notes "$FILENAME"
+          gh release create "${GITHUB_REF_NAME}" --notes "See [CHANGELOG.md](https://github.com/deskypus/deeplink/blob/${GITHUB_REF_NAME}/CHANGELOG.md)." "$FILENAME"
 
       - name: Create release
         env:
