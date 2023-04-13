@@ -22,7 +22,9 @@ async function stubIndexHtml() {
 }
 
 function writeManifest() {
-    execSync("npx tsx ./scripts/manifest.ts", { stdio: "inherit" });
+    execSync("npx tsx ./scripts/manifest.ts", {
+        stdio: "inherit",
+    });
 }
 
 writeManifest();

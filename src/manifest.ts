@@ -4,7 +4,28 @@ import type { Manifest } from "webextension-polyfill";
 
 import type PkgType from "../package.json";
 
-import { isDev, port, r } from "../scripts/utils";
+import { isDev, port, r, log } from "../scripts/utils";
+
+const buildForFirefox = process.env.BUILD_FOR_FIREFOX === "true" ? true : false;
+
+let background: Manifest.WebExtensionManifestBackgroundC2Type | Manifest.WebExtensionManifestBackgroundC3Type;
+
+if (buildForFirefox) {
+    log("MANIFEST", "Building manifest for Firefox");
+    // Firefox does not support service workers for background scripts in Manifest V3.
+    // Instead, they support (only) non-persistent background scripts from V3 onwards.
+    // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Background_scripts#specify_the_background_scripts
+    background = {
+        scripts: ["./dist/background/index.js"],
+        type: "module",
+    };
+} else {
+    log("MANIFEST", "Building manifest for Chrome");
+    // Chrome only supports service workers starting in V3.
+    background = {
+        service_worker: "./dist/background/index.js",
+    };
+}
 
 export async function getManifest() {
     const pkg = (await fs.readJSON(r("package.json"))) as typeof PkgType;
@@ -25,9 +46,7 @@ export async function getManifest() {
             open_in_tab: true,
             // chrome_style: false,
         },
-        background: {
-            service_worker: "./dist/background/index.js",
-        },
+        background,
         icons: {
             16: "./assets/icon_16@2x.png",
             48: "./assets/icon_48@2x.png",

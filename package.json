@@ -9,6 +9,7 @@
     "dev": "npm run clear && cross-env NODE_ENV=development npm run build:watch",
     "build:watch": "nodemon --ignore 'src/*.d.ts' --watch src -e ts,js,mjs,json,scss,css,vue --exec run-p build:tsup build",
     "build": "cross-env NODE_ENV=production run-s clear build:web build:prepare build:js build:tsup",
+    "build:firefox": "cross-env NODE_ENV=production BUILD_FOR_FIREFOX=true run-s clear build:web build:prepare build:js build:tsup",
     "build:prepare": "tsx scripts/prepare.ts",
     "build:web": "vite build",
     "build:js": "vite build --config vite.config.content.ts",
