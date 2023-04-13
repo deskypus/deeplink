@@ -79,10 +79,10 @@ export async function getManifest() {
                 // The add ID is required for add-ons using manifest V3.
                 // https://extensionworkshop.com/documentation/develop/extensions-and-the-add-on-id/
                 // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_specific_settings
-                id: "7b5273e7-7c08-460f-a32b-4b2fa62514a0",
+                id: "{7b5273e7-7c08-460f-a32b-4b2fa62514a0}",
                 // 109 is the minimum version for Manifest V3 in Firefox.
                 // https://extensionworkshop.com/documentation/publish/distribute-manifest-versions/
-                strict_min_version: "109.*",
+                strict_min_version: "109.0",
             },
         };
     } else {
