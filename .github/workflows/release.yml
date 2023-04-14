@@ -74,26 +74,26 @@ jobs:
           zip -r "$FILENAME" ./*
           gh release upload "${GITHUB_REF_NAME}" "$FILENAME"
 
-  # Submit:
-  #   needs: [Build, Release]
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       command:
-  #         - Firefox
-  #         - Chrome
-  #   environment: ${{ matrix.command }}
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/download-artifact@v3
+  Submit:
+    needs: [Build, Release]
+    strategy:
+      fail-fast: false
+      matrix:
+        command:
+          - Firefox
+          # - Chrome
+    environment: ${{ matrix.command }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
 
-  #     - name: Submit to Mozilla
-  #       if: matrix.command == 'Firefox'
-  #       working-directory: artifact-${{ matrix.command }}
-  #       run: npx web-ext-submit@7
-  #       env:
-  #         WEB_EXT_API_KEY: ${{ secrets.WEB_EXT_API_KEY }}
-  #         WEB_EXT_API_SECRET: ${{ secrets.WEB_EXT_API_SECRET }}
+      - name: Submit to Mozilla
+        if: matrix.command == 'Firefox'
+        working-directory: ${{ env.DIRECTORY }}-${{ matrix.command }}
+        run: npx web-ext-submit@7
+        env:
+          WEB_EXT_API_KEY: ${{ secrets.WEB_EXT_API_KEY }}
+          WEB_EXT_API_SECRET: ${{ secrets.WEB_EXT_API_SECRET }}
 
   #     - name: Submit to Google
   #       if: matrix.command == 'Chrome'
