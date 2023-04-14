@@ -20,11 +20,6 @@ export async function getManifest() {
             default_icon: "./assets/icon_128@2x.png",
             default_popup: "./dist/popup/index.html",
         },
-        options_ui: {
-            page: "./dist/options/index.html",
-            open_in_tab: true,
-            // chrome_style: false,
-        },
         icons: {
             16: "./assets/icon_16@2x.png",
             48: "./assets/icon_48@2x.png",
