@@ -97,7 +97,7 @@ jobs:
 
       - name: Submit to Google
         if: matrix.command == 'Chrome'
-        working-directory: artifact-${{ matrix.command }}
+        working-directory: ${{ env.DIRECTORY }}-${{ matrix.command }}
         run: npx chrome-webstore-upload-cli@2 upload --auto-publish
         env:
           EXTENSION_ID: ${{ secrets.EXTENSION_ID }}
