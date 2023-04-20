@@ -20,9 +20,10 @@ Download and install the latest version of [Deskypus](https://deskypus.github.io
 
 ## Installation
 
-### Extensions web store
+### From web stores
 
-Not yet supported. Please check back later.
+* [Chrome](https://chrome.google.com/webstore/detail/deeplink/jionfdghdffeibmjoeclnhimnghgancc)
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/deeplink/)
 
 ### From source
 
