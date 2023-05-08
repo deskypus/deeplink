@@ -1,14 +1,14 @@
 // generate stub index.html files for dev entry
-import { execSync } from "child_process";
+import { execSync } from "node:child_process";
 import fs from "fs-extra";
 import chokidar from "chokidar";
-import { r, port, isDev, log } from "./utils";
+import { isDev, log, port, r } from "./utils";
 
 /**
  * Stub index.html to use Vite in development
  */
 async function stubIndexHtml() {
-    const views = ["options", "popup"];
+    const views = ["options", "popup", "background"];
 
     for (const view of views) {
         await fs.ensureDir(r(`extension/dist/${view}`));
@@ -22,9 +22,7 @@ async function stubIndexHtml() {
 }
 
 function writeManifest() {
-    execSync("npx tsx ./scripts/manifest.ts", {
-        stdio: "inherit",
-    });
+    execSync("npx esno ./scripts/manifest.ts", { stdio: "inherit" });
 }
 
 writeManifest();
