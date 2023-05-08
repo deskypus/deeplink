@@ -1,10 +1,7 @@
-import { dirname, relative } from "path";
-import { defineConfig, UserConfig } from "vite";
-
+import { dirname, relative } from "node:path";
+import type { UserConfig } from "vite";
+import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
-
-import replace from "@rollup/plugin-replace";
-
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import { FileSystemIconLoader } from "unplugin-icons/loaders";
@@ -13,8 +10,8 @@ import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 
 import UnoCSS from "unocss/vite";
-
-import { r, port, isDev } from "./scripts/utils";
+import { isDev, port, r } from "./scripts/utils";
+import packageJson from "./package.json";
 
 export const sharedConfig: UserConfig = {
     root: r("src"),
@@ -25,6 +22,7 @@ export const sharedConfig: UserConfig = {
     },
     define: {
         __DEV__: isDev,
+        __NAME__: JSON.stringify(packageJson.name),
     },
     plugins: [
         Vue(),
@@ -43,7 +41,7 @@ export const sharedConfig: UserConfig = {
         Components({
             dirs: [r("src/components")],
             // generate `components.d.ts` for ts support with Volar
-            dts: true,
+            dts: r("src/components.d.ts"),
             resolvers: [
                 // auto import icons
                 IconsResolver({
@@ -61,13 +59,6 @@ export const sharedConfig: UserConfig = {
 
         // https://github.com/unocss/unocss
         UnoCSS(),
-
-        replace({
-            __DEV__: JSON.stringify(isDev),
-            "process.env.NODE_ENV": JSON.stringify(isDev ? "development" : "production"),
-            __VUE_OPTIONS_API__: JSON.stringify(true),
-            __VUE_PROD_DEVTOOLS__: JSON.stringify(false),
-        }),
 
         // rewrite assets to use relative path
         {
@@ -95,10 +86,15 @@ export default defineConfig(({ command }) => ({
         },
     },
     build: {
+        watch: isDev ? {} : undefined,
         outDir: r("extension/dist"),
         emptyOutDir: false,
         sourcemap: isDev ? "inline" : false,
         minify: "esbuild",
+        // https://developer.chrome.com/docs/webstore/program_policies/#:~:text=Code%20Readability%20Requirements
+        terserOptions: {
+            mangle: false,
+        },
         rollupOptions: {
             input: {
                 options: r("src/options/index.html"),
@@ -107,4 +103,8 @@ export default defineConfig(({ command }) => ({
         },
     },
     plugins: sharedConfig.plugins,
+    test: {
+        globals: true,
+        environment: "jsdom",
+    },
 }));
