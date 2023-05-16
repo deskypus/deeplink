@@ -5873,10 +5873,10 @@ unocss@^0.51.0:
     "@unocss/transformer-variant-group" "0.51.12"
     "@unocss/vite" "0.51.12"
 
-unplugin-auto-import@0.15.3:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.15.3.tgz#abf5f1bf42f8c181e9dd1067bd5645aad727df6e"
-  integrity sha512-RLT8SqbPn4bT7yBshZId0uPSofKWnwr66RyDaxWaFb/+f7OTDOWAsVNz+hOQLBWSjvbekr2xZY9ccS8TDHJbCQ==
+unplugin-auto-import@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.16.0.tgz#53f1aeee06631d9aa2105b7bf3e3107bd21ce7e0"
+  integrity sha512-AbeGl3kzoGyqh2uWwwSVYCXy2ouvSbHfBc2u7xmNBpOosWa7SIAz+nQx3f1JpMXunEZ9TTChXkor4WcGrpkc7Q==
   dependencies:
     "@antfu/utils" "^0.7.2"
     "@rollup/pluginutils" "^5.0.2"
