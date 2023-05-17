@@ -6015,7 +6015,12 @@ vite@4.3.7:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vue-demi@0.14.3, vue-demi@>=0.14.0:
+vue-demi@0.14.4:
+  version "0.14.4"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.4.tgz#e3e634eece46ad39e391523cde5b395d22f6cf33"
+  integrity sha512-YR9bCmtIYgsqNVRG3MLLWlhbZ9tTNMuWHPd7yx0pHS3NDX17MeVNHgKTOClYE8pBjsfNe4CMaReP7zQtHDIbiA==
+
+vue-demi@>=0.14.0:
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.3.tgz#5c7375527ad32580a7d8d28ee322bc059dbc1b99"
   integrity sha512-aknytzARm7U20nMhvOdfa5IRiS+oyATtd55s3fICsT7wEtN/qoOiOINsNsNJjeZCOsPNOGS4p1yDOwH9cTxgjg==
