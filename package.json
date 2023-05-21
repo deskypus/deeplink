@@ -62,7 +62,7 @@
     "tsup": "6.5.0",
     "tsx": "3.12.7",
     "typescript": "5.0.4",
-    "unocss": "^0.51.0",
+    "unocss": "^0.52.0",
     "unplugin-auto-import": "0.16.0",
     "unplugin-icons": "0.16.1",
     "unplugin-vue-components": "0.24.1",
