@@ -933,15 +933,10 @@
     "@unocss/core" "0.52.5"
     "@unocss/preset-mini" "0.52.5"
 
-"@unocss/reset@0.52.5":
+"@unocss/reset@0.52.5", "@unocss/reset@^0.52.0":
   version "0.52.5"
   resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.52.5.tgz#7e72906b5f48851ee94e3563cf21c2b871ef4836"
   integrity sha512-YrZTTRrf7hnBkKc9j72gelKGqBGdneb4Vo45Oy/dz6aShhp9r64O1UfsrOBVN1Dq0CJy0GYj/BS9yIEk0GUOOA==
-
-"@unocss/reset@^0.52.0":
-  version "0.52.4"
-  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.52.4.tgz#f7634f8cc5d93a56e7e11969b11d402018df32ef"
-  integrity sha512-tbKBifU5EPsLStKdXjUIwAN9thB1x/PbNWdYLW1GwciEOs/j9tdHnYgPlhalpmm5+N80uw3nHr6nY4RP/E98sA==
 
 "@unocss/scope@0.52.5":
   version "0.52.5"
