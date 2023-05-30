@@ -5915,10 +5915,10 @@ unocss@^0.52.0:
     "@unocss/transformer-variant-group" "0.52.5"
     "@unocss/vite" "0.52.5"
 
-unplugin-auto-import@0.16.2:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.16.2.tgz#0c677296b8ecbab9e4b131e468644c702f52d1a7"
-  integrity sha512-t5f+xArJZRsfgF8Zftc2JFTJJTo7BPkPSeLQUXt6xxambnwWBer8vpEgwaCYrR50MIm5mjmhjebt33OZXIW0uQ==
+unplugin-auto-import@0.16.4:
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.16.4.tgz#7b78de0c1ec92cc1a753a89d718ed23828576db9"
+  integrity sha512-xdgBa9NAS3JG8HjkAZHSbGSMlrjKpaWKXGUzaF6RzEtr980RCl1t0Zsu0skUInNYrEQfqaHc7aGWPv41DLTK/w==
   dependencies:
     "@antfu/utils" "^0.7.2"
     "@rollup/pluginutils" "^5.0.2"
