@@ -1049,15 +1049,10 @@
     "@unocss/core" "0.53.3"
     "@unocss/preset-mini" "0.53.3"
 
-"@unocss/reset@0.53.3":
+"@unocss/reset@0.53.3", "@unocss/reset@^0.53.0":
   version "0.53.3"
   resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.53.3.tgz#3591bb311705bd10cdf1c9dd4cefbff0eda490e8"
   integrity sha512-DilchevgPVH7Kiiwg/yU8xV6admL/FeV1rwf5sFBEd4THiQSasQXYiqE0e9RyOAF4bJA4c3ZGE9x0cb8T37Fwg==
-
-"@unocss/reset@^0.53.0":
-  version "0.53.1"
-  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.53.1.tgz#01026e3682c194dda0efb4991a671a3b4e288d31"
-  integrity sha512-rkb6mB0JESRFxZXSknZ3TWQ92TmZwpJyF2OV+7GPZrtUk1YBzydH6DfLjLPxyD1xEUtsQsacNHFO7NEmd9WO6A==
 
 "@unocss/scope@0.53.3":
   version "0.53.3"
