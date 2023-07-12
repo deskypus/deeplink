@@ -2774,12 +2774,12 @@ eslint@8.44.0:
     strip-json-comments "^3.1.0"
     text-table "^0.2.0"
 
-esno@^0.16.3:
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/esno/-/esno-0.16.3.tgz#182bf9b9608278fba1ba2f97d589cb80ba731bc5"
-  integrity sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==
+esno@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/esno/-/esno-0.17.0.tgz#8692f002c4fa54b995849350eae6b824537f334e"
+  integrity sha512-w78cQGlptQfsBYfootUCitsKS+MD74uR5L6kNsvwVkJsfzEepIafbvWsx2xK4rcFP4IUftt4F6J8EhagUxX+Bg==
   dependencies:
-    tsx "^3.2.1"
+    tsx "^3.12.7"
 
 espree@9.5.0, espree@^9.5.0:
   version "9.5.0"
@@ -5966,7 +5966,7 @@ tsutils@^3.21.0:
   dependencies:
     tslib "^1.8.1"
 
-tsx@3.12.7, tsx@^3.2.1:
+tsx@3.12.7, tsx@^3.12.7:
   version "3.12.7"
   resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.12.7.tgz#b3b8b0fc79afc8260d1e14f9e995616c859a91e9"
   integrity sha512-C2Ip+jPmqKd1GWVQDvz/Eyc6QJbGfE7NrR3fx5BpEHMZsEHoIxHL1j+lKdGobr8ovEyqeNkPLSKp6SCSOt7gmw==
