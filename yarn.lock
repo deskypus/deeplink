@@ -1084,9 +1084,9 @@
   integrity sha512-tH8K4jw76mbWA67UUHKV6zxiwOsiG+byrHoG3lz8hr+cm6OgEJ3WjNNp7dZINmr7S7ylWO6igbxGQpsAuIQZCw==
 
 "@unocss/reset@^0.53.0":
-  version "0.53.4"
-  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.53.4.tgz#8150ad45b383641e9aa4a0474d3d6f4844f5b9ce"
-  integrity sha512-NMqntd9CE9EpdtI2ELGCZg9Z2ySMdo/ljepP8QwfRmWbYaXUf3T/GJsOTqewbhNgJUGYinbs1OtiN0yG5xZjJQ==
+  version "0.53.6"
+  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.53.6.tgz#4b7d1036e44709ec0799d4e26ad913aba98b1652"
+  integrity sha512-WtZU0Q5Y9CHzitYPJ+ZGPUssVuDnRakmHETQ2EuBJgWZhgsmTECrpb78+tnJdFVowuYYQyV0CP6a07uwkFNm6g==
 
 "@unocss/scope@0.53.5":
   version "0.53.5"
