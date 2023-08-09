@@ -37,7 +37,7 @@
     "@types/webextension-polyfill": "0.10.1",
     "@typescript-eslint/eslint-plugin": "6.3.0",
     "@typescript-eslint/parser": "6.3.0",
-    "@unocss/reset": "^0.54.0",
+    "@unocss/reset": "^0.55.0",
     "@vitejs/plugin-vue": "4.2.3",
     "@vue/compiler-sfc": "3.3.4",
     "@vue/eslint-config-prettier": "8.0.0",
