@@ -6,6 +6,10 @@
             <div class="i-mdi-alert-circle text-lg text-red-700" v-else />
         </div>
         <button class="btn mt-2" v-if="!hasPermissions" @click="requestPermissions">Show permissions request</button>
+        <div class="mt-2" v-if="hasPermissions">
+            Head over to <a href="https://app.pulumi.com" target="_blank">https://app.pulumi.com</a> and browse any of
+            your organizations.
+        </div>
     </main>
 </template>
 
