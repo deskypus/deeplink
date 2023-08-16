@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/deskypus/deeplink/compare/v0.0.6...v0.0.7) (2023-08-16)
+
+
+### Bug Fixes
+
+* Show help text in the popup view. ([977dbd3](https://github.com/deskypus/deeplink/commit/977dbd3dd70c750f74b7156e15359773d6ffe85d))
+
 ### [0.0.6](https://github.com/deskypus/deeplink/compare/v0.0.5...v0.0.6) (2023-04-15)
 
 ### [0.0.5](https://github.com/deskypus/deeplink/compare/v0.0.4...v0.0.5) (2023-04-14)
