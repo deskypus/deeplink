@@ -70,7 +70,7 @@
     "vite": "4.4.9",
     "vue": "3.3.4",
     "vue-demi": "0.14.6",
-    "web-ext": "7.6.2",
+    "web-ext": "7.7.0",
     "webext-bridge": "5.0.5",
     "webextension-polyfill": "0.10.0"
   }
