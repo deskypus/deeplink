@@ -6408,10 +6408,10 @@ web-streams-polyfill@^3.0.3:
   resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz#71c2718c52b45fd49dbeee88634b3a60ceab42a6"
   integrity sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
 
-webext-bridge@5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/webext-bridge/-/webext-bridge-5.0.5.tgz#1465135343fbe5ee944323294ac90cd97b663304"
-  integrity sha512-STCv6pLfQtUHmZQ96Tmov+CrdGjjc08xG6o/VH7TlDvchAPmXEG7faPdHfIzkcs0qp0sedDkq7oDzXAei19vtw==
+webext-bridge@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/webext-bridge/-/webext-bridge-6.0.1.tgz#a78596cb5c50b11aeb2797b31809487ab2493fd9"
+  integrity sha512-GruIrN+vNwbxVCi8UW4Dqk5YkcGA9V0ZfJ57jXP9JXHbrsDs5k2N6NNYQR5e+wSCnQpGYOGAGihwUpKlhg8QIw==
   dependencies:
     "@types/webextension-polyfill" "^0.8.3"
     nanoevents "^6.0.2"
