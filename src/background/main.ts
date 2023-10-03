@@ -1,4 +1,4 @@
-import { sendMessage, onMessage } from "webext-bridge";
+import { sendMessage, onMessage } from "webext-bridge/background";
 import browser, { Tabs } from "webextension-polyfill";
 
 browser.runtime.onInstalled.addListener((): void => {

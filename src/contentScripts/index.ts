@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { onMessage } from "webext-bridge";
+import { onMessage } from "webext-bridge/content-script";
 import Cookies from "js-cookie";
 import { createApp } from "vue";
 import OpenProjectButton from "./views/OpenProjectButton.vue";

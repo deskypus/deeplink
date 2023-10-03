@@ -45,7 +45,7 @@ export const sharedConfig: UserConfig = {
             resolvers: [
                 // auto import icons
                 IconsResolver({
-                    componentPrefix: "",
+                    prefix: "",
                 }),
             ],
         }),
