@@ -34,7 +34,7 @@
     "@rushstack/eslint-patch": "1.5.1",
     "@types/fs-extra": "11.0.2",
     "@types/js-cookie": "3.0.4",
-    "@types/node": "18.18.4",
+    "@types/node": "18.18.5",
     "@types/webextension-polyfill": "0.10.4",
     "@typescript-eslint/eslint-plugin": "6.7.5",
     "@typescript-eslint/parser": "6.7.5",
