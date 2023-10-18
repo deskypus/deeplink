@@ -67,7 +67,7 @@
     "unplugin-auto-import": "0.16.6",
     "unplugin-icons": "0.17.0",
     "unplugin-vue-components": "0.25.2",
-    "vite": "4.4.11",
+    "vite": "4.5.0",
     "vue": "3.3.4",
     "vue-demi": "0.14.6",
     "web-ext": "7.8.0",
