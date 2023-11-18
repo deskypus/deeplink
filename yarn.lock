@@ -391,9 +391,9 @@
   integrity sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==
 
 "@ffflorian/jszip-cli@^3.4.1":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.5.0.tgz#e35f3625987bd43326f53bd29b95d2edbc6c8d4f"
-  integrity sha512-H0yLjKT22efjX1MtPu3cOXCHAyBM+l1+WPQ/umEDlWdCu0xfQkEfWHzG/sQtm0T9OQ6WV3g7dVInxkwhyMB8Sw==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.5.1.tgz#d431adb81f7b5910f93d6f6c6e3cf9d9a2b171dc"
+  integrity sha512-bsm8GuJA5EXcDf2ySsHvD8PArnUo9zN+kAE/WmIBOZ/tJdGrlPcmiyx1F4K5SVhGdWuSPjwU8uOqoxP3gpfh9g==
   dependencies:
     commander "11.1.0"
     cosmiconfig "8.3.6"
@@ -4020,9 +4020,11 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 "lru-cache@^9.1.1 || ^10.0.0":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.0.1.tgz#0a3be479df549cca0e5d693ac402ff19537a6b7a"
-  integrity sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.0.2.tgz#34504678cc3266b09b8dfd6fab4e1515258271b7"
+  integrity sha512-Yj9mA8fPiVgOUpByoTZO5pNrcl5Yk37FcSHsUINpAsaBIEZIuqcCclDZJCVxqQShDsmYX8QG63svJiTbOATZwg==
+  dependencies:
+    semver "^7.3.5"
 
 magic-string@^0.30.1:
   version "0.30.1"
@@ -5412,7 +5414,6 @@ stream-to-promise@3.0.0:
     stream-to-array "~2.3.0"
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.3:
-  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -5479,7 +5480,6 @@ string_decoder@~1.1.1:
     safe-buffer "~5.1.0"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
-  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
