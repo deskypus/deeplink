@@ -6065,14 +6065,13 @@ tsup@8.0.0:
     sucrase "^3.20.3"
     tree-kill "^1.2.2"
 
-tsx@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.2.1.tgz#ea37cdc0cd6f47e2e13d763f373b292677dcd555"
-  integrity sha512-rvRrYn6Q5/97TjafXgye7/yrR5oEBlKgOfNXcqpZ87Tu5lh7DFcq/VtznTbpbnV7XMj6Ghvf8j8PlYTQse/SKA==
+tsx@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.3.0.tgz#81cd6f29c74ad7f794f96c69c1ce3e5bdb4e1748"
+  integrity sha512-zalfbBdr7tvYok5sSbnsv4uL+DhT1wRZwbWwuOXjhH8YtJxN2bpl6lpXMxuPThMAKzZ2qgrhuf5ckq/uSsm3CA==
   dependencies:
     esbuild "~0.18.20"
     get-tsconfig "^4.7.2"
-    source-map-support "^0.5.21"
   optionalDependencies:
     fsevents "~2.3.3"
 
