@@ -64,7 +64,7 @@
     "tsx": "4.6.2",
     "typescript": "5.3.2",
     "unocss": "^0.57.0",
-    "unplugin-auto-import": "0.17.1",
+    "unplugin-auto-import": "0.17.2",
     "unplugin-icons": "0.18.1",
     "unplugin-vue-components": "0.25.2",
     "vite": "5.0.4",
