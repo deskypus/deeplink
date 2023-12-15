@@ -39,7 +39,7 @@ jobs:
         run: yarn run build:firefox
 
       - name: Ready for "submit" jobs
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: ${{ env.DIRECTORY }}
           name: ${{ env.DIRECTORY }}-${{ matrix.command }}
