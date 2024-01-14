@@ -43,7 +43,7 @@
     "@vue/compiler-sfc": "3.4.13",
     "@vue/eslint-config-prettier": "9.0.0",
     "@vue/eslint-config-typescript": "12.0.0",
-    "@vueuse/core": "10.7.1",
+    "@vueuse/core": "10.7.2",
     "chokidar": "3.5.3",
     "cross-env": "7.0.3",
     "crx": "5.0.1",
