@@ -1026,10 +1026,10 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.4.1.tgz#8311b77e6cce322865ba12ada8c3779369610d18"
   integrity sha512-eAhItDX9yQtZVM3yvXS/VR3qPqcnXvnLyx1pLXl4JzyNMBNO3KC986t/iAg2zcMzpAp9JSvxB5VZGnBiNoA98w==
 
-"@rushstack/eslint-patch@1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.6.1.tgz#9ab8f811930d7af3e3d549183a50884f9eb83f36"
-  integrity sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==
+"@rushstack/eslint-patch@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.7.0.tgz#b5bc1e081428794f6a4d239707b359404be35ce2"
+  integrity sha512-Jh4t/593gxs0lJZ/z3NnasKlplXT2f+4y/LZYuaKZW5KAaiVFL/fThhs+17EbUd53jUVJ0QudYCBGbN/psvaqg==
 
 "@sindresorhus/is@^4.6.0":
   version "4.6.0"
