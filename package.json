@@ -73,5 +73,9 @@
     "web-ext": "7.10.0",
     "webext-bridge": "6.0.1",
     "webextension-polyfill": "0.10.0"
+  },
+  "resolutions": {
+    "update-notifier": "^7",
+    "ansi-align": "praneetloke/ansi-align.git"
   }
 }
