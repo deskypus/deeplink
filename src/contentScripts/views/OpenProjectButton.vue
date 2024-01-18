@@ -1,14 +1,16 @@
 <template>
     <a
-        class="mr-8 mat-focus-indicator mat-raised-button mat-button-base mat-primary"
+        class="mr-8 primary mdc-button mdc-button--outlined mat-mdc-outlined-button mat-unthemed mat-mdc-button-base ng-star-inserted"
         :href="formattedHref"
         @click.stop
         target="_blank"
         rel="noopener"
     >
-        <span class="mat-button-wrapper">Open Locally</span>
-        <span class="mat-ripple mat-button-ripple"></span>
-        <span class="mat-button-focus-overlay"></span>
+        <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+        <span class="mdc-button__label"> Open Locally </span>
+        <span class="mat-mdc-focus-indicator"></span>
+        <span class="mat-mdc-button-touch-target"></span>
+        <span class="mat-mdc-button-ripple"></span>
     </a>
 </template>
 <script setup lang="ts">

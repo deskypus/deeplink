@@ -41,7 +41,7 @@ function process(userInfo: PulumiUserInfo) {
 
         const projGroupNameEl = projectContainer.querySelector("app-project-group .proj-group-name");
         const projectNameElements = projectContainer.querySelectorAll(
-            ".project-container-inner .projects app-project-card .project-card .mat-card-content app-project-header .project-label .proj-project-name"
+            ".project-container-inner .projects app-project-card .project-card .mat-mdc-card-content app-project-header .project-label .proj-project-name"
         );
 
         projectNameElements.forEach((p: Element) => {
