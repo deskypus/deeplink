@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@ffflorian/jszip-cli": "^3.4.1",
-    "@iconify/json": "2.2.170",
+    "@iconify/json": "2.2.171",
     "@rollup/plugin-replace": "^5.0.2",
     "@rushstack/eslint-patch": "1.7.0",
     "@types/fs-extra": "11.0.4",
