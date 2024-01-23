@@ -96,10 +96,17 @@ function process(userInfo: PulumiUserInfo) {
             return;
         }
 
+        let timeout: number;
         const observer = new MutationObserver(() => {
-            setTimeout(() => {
+            // Clear the previously scheduled timeout since the
+            // mutation have triggered again.
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+
+            timeout = setTimeout(() => {
                 process(pulumiUserInfo);
-            }, 1000);
+            }, 800);
         });
         observer.observe(projects, {
             childList: true,
