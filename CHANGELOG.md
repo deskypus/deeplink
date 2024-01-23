@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/deskypus/deeplink/compare/v0.0.11...v0.0.12) (2024-01-23)
+
+
+### Bug Fixes
+
+* watch the parent app-projects-card for mutations when the user filters the projects list ([#1669](https://github.com/deskypus/deeplink/issues/1669)) ([1566298](https://github.com/deskypus/deeplink/commit/156629824733d6d34937da1737d9020f44de7889))
+
 ### [0.0.11](///compare/v0.0.10...v0.0.11) (2024-01-18)
 
 ### [0.0.10](https://github.com/deskypus/deeplink/compare/v0.0.9...v0.0.10) (2023-10-03)
