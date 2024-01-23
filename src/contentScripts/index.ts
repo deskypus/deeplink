@@ -80,10 +80,6 @@ function process(userInfo: PulumiUserInfo) {
         }
         const pulumiUserInfo = JSON.parse(pulumiUserInfoCookie.replace("j:", "")) as PulumiUserInfo;
 
-        // mount component to context window
-        // const container = document.createElement("div");
-        // const root = document.createElement("div");
-
         const styleEl = document.createElement("link");
         styleEl.setAttribute("rel", "stylesheet");
         styleEl.setAttribute("href", browser.runtime.getURL("dist/contentScripts/style.css"));
@@ -94,5 +90,19 @@ function process(userInfo: PulumiUserInfo) {
         // shadowDOM.appendChild(styleEl);
         // shadowDOM.appendChild(root);
         setTimeout(() => process(pulumiUserInfo), 1000);
+
+        const projects = document.querySelector("app-projects-card");
+        if (!projects) {
+            return;
+        }
+
+        const observer = new MutationObserver(() => {
+            setTimeout(() => {
+                process(pulumiUserInfo);
+            }, 1000);
+        });
+        observer.observe(projects, {
+            childList: true,
+        });
     });
 })();
