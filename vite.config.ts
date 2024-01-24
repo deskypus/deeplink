@@ -1,7 +1,11 @@
 import { dirname, relative } from "node:path";
+
 import type { UserConfig } from "vite";
 import { defineConfig } from "vite";
+
 import Vue from "@vitejs/plugin-vue";
+import basicSsl from "@vitejs/plugin-basic-ssl";
+
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import { FileSystemIconLoader } from "unplugin-icons/loaders";
@@ -69,6 +73,11 @@ export const sharedConfig: UserConfig = {
                 return html.replace(/"\/assets\//g, `"${relative(dirname(path), "/assets")}/`);
             },
         },
+        basicSsl({
+            name: "test",
+            domains: ["*.deeplink-deskypus.com"],
+            certDir: "./cert",
+        }),
     ],
     optimizeDeps: {
         include: ["vue", "@vueuse/core", "webextension-polyfill"],
@@ -78,12 +87,13 @@ export const sharedConfig: UserConfig = {
 
 export default defineConfig(({ command }) => ({
     ...sharedConfig,
-    base: command === "serve" ? `http://localhost:${port}/` : "/dist/",
+    base: command === "serve" ? `https://deeplink-deskypus.com:${port}/` : "/dist/",
     server: {
         port,
         hmr: {
-            host: "localhost",
+            host: "deeplink-deskypus.com",
         },
+        https: {},
     },
     build: {
         watch: isDev ? {} : undefined,

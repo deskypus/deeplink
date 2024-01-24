@@ -36,7 +36,7 @@ export async function getManifest() {
         content_security_policy: {
             extension_pages: isDev
                 ? // this is required on dev for Vite script to load
-                  `script-src 'self' http://localhost:${port}; object-src 'self' http://localhost:${port}`
+                  `script-src 'self' https://deeplink-deskypus.com:${port}; object-src 'self' https://deeplink-deskypus.com:${port}`
                 : "script-src 'self'; object-src 'self'",
         },
         web_accessible_resources: [
