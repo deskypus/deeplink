@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/deskypus/deeplink/compare/v0.0.12...v0.0.13) (2024-01-24)
+
+
+### Bug Fixes
+
+* Project label display gets corrupted when filtering is engaged ([c9162ae](https://github.com/deskypus/deeplink/commit/c9162ae65423b034f290dac8e1f0583263d51a05))
+
 ### [0.0.12](https://github.com/deskypus/deeplink/compare/v0.0.11...v0.0.12) (2024-01-23)
 
 
