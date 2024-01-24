@@ -53,7 +53,6 @@ function process(userInfo: PulumiUserInfo) {
 
             const buttonContainer = document.createElement("div");
             buttonContainer.classList.add("pul-desk");
-            buttonContainer.style.display = "inline-block";
             p.appendChild(buttonContainer);
 
             const projectName = p.textContent;
@@ -96,7 +95,7 @@ function process(userInfo: PulumiUserInfo) {
             return;
         }
 
-        let timeout: number;
+        let timeout: NodeJS.Timeout;
         const observer = new MutationObserver(() => {
             // Clear the previously scheduled timeout since the
             // mutation have triggered again.

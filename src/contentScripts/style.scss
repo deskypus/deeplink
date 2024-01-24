@@ -1,5 +1,9 @@
 .proj-project-name-flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    .pul-desk {
+        position: absolute;
+        right: 30px;
+    }
 }
