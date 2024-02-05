@@ -23,7 +23,7 @@
     execa "^5.1.1"
     find-up "^5.0.0"
 
-"@antfu/install-pkg@^0.3.0":
+"@antfu/install-pkg@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-0.3.1.tgz#f63b3c98f92b455cd0929d4503eab276c9680943"
   integrity sha512-A3zWY9VeTPnxlMiZtsGHw2lSd3ghwvL8s9RiGOtqvDxhhFfZ781ynsGBa/iUnDJ5zBrmTFQrJDud3TGgRISaxw==
@@ -546,18 +546,6 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
-
-"@iconify/utils@^2.1.20":
-  version "2.1.20"
-  resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.20.tgz#e1a0c1e825572b080b6f4bcadda6b591f8baf9f1"
-  integrity sha512-t8TeKlYK/5i9yTY9VAGAE4P0qQHd/0vH+VSRO+bdpxlt8wqB6f2I0/IrciRsdeFZPMoL8IICgP7lgl2ZtbG8Tw==
-  dependencies:
-    "@antfu/install-pkg" "^0.1.1"
-    "@antfu/utils" "^0.7.5"
-    "@iconify/types" "^2.0.0"
-    debug "^4.3.4"
-    kolorist "^1.8.0"
-    local-pkg "^0.5.0"
 
 "@iconify/utils@^2.1.22":
   version "2.1.22"
@@ -5351,18 +5339,18 @@ unplugin-auto-import@0.17.5:
     unimport "^3.7.1"
     unplugin "^1.6.0"
 
-unplugin-icons@0.18.3:
-  version "0.18.3"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.18.3.tgz#453889922fa119e18ebccfcda9779364d02ead44"
-  integrity sha512-6EHPMXOq7XL8JAULzX0o3KqOsJHhYfpDfB1WvBWwZJH/PutIkV/ahRpHytucQ1evfRFuv/DVIozEmFIhP1xRxA==
+unplugin-icons@0.18.5:
+  version "0.18.5"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.18.5.tgz#e43aafc3655cbec0d35a4830e058efe54d0efec6"
+  integrity sha512-KVNAohXbZ7tVcG1C3p6QaC7wU9Qrj7etv4XvsMMJAxr5LccQZ+Iuv5LOIv/7GtqXaGN1BuFCqRO1ErsHEgEXdQ==
   dependencies:
-    "@antfu/install-pkg" "^0.3.0"
-    "@antfu/utils" "^0.7.6"
-    "@iconify/utils" "^2.1.20"
+    "@antfu/install-pkg" "^0.3.1"
+    "@antfu/utils" "^0.7.7"
+    "@iconify/utils" "^2.1.22"
     debug "^4.3.4"
     kolorist "^1.8.0"
     local-pkg "^0.5.0"
-    unplugin "^1.5.1"
+    unplugin "^1.6.0"
 
 unplugin-vue-components@0.26.0:
   version "0.26.0"
