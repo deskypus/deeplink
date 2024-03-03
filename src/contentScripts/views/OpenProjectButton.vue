@@ -7,7 +7,7 @@
         rel="noopener"
     >
         <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
-        <span class="mdc-button__label"> Open Locally </span>
+        <span class="mdc-button__label"> Open in desktop </span>
         <span class="mat-mdc-focus-indicator"></span>
         <span class="mat-mdc-button-touch-target"></span>
         <span class="mat-mdc-button-ripple"></span>
