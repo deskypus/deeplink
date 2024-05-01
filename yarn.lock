@@ -2816,7 +2816,7 @@ es6-promisify@7.0.0:
   resolved "https://registry.yarnpkg.com/es6-promisify/-/es6-promisify-7.0.0.tgz#9a710008dd6a4ab75a89e280bad787bfb749927b"
   integrity sha512-ginqzK3J90Rd4/Yz7qRrqUeIpe3TwSXTPPZtPne7tGBPeAaQiU8qt4fpKApnxHcq1AwtUdHVg5P77x/yrggG8Q==
 
-esbuild@^0.19.2, esbuild@~0.19.10:
+esbuild@^0.19.2:
   version "0.19.11"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.19.11.tgz#4a02dca031e768b5556606e1b468fe72e3325d96"
   integrity sha512-HJ96Hev2hX/6i5cDVwcqiJBBtuo9+FeIJOtZ9W1kA5M6AMJRHUZlpYZ1/SbEwtO0ioNAW8rUooVpC/WehY2SfA==
@@ -3050,11 +3050,11 @@ eslint@9.1.1:
     text-table "^0.2.0"
 
 esno@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/esno/-/esno-4.0.0.tgz#80f84ee2048e7398f65d1057ff6a60c9f8fcd7b9"
-  integrity sha512-tmaM9gfnSWqzePVJ5FJLYX9mMyE6ZevvOIvd1CMoMk2Fn1F3aKI/OQPjubS5wCIKlPpWfDfKFEtoslCNCiZJpQ==
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/esno/-/esno-4.7.0.tgz#8fd111cd83073556d0f724845a1d5d77a2a2bf48"
+  integrity sha512-81owrjxIxOwqcABt20U09Wn8lpBo9K6ttqbGvQcB3VYNLJyaV1fvKkDtpZd3Rj5BX3WXiGiJCjUevKQGNICzJg==
   dependencies:
-    tsx "^4.1.0"
+    tsx "^4.7.1"
 
 espree@9.6.1, espree@^9.3.1, espree@^9.6.0, espree@^9.6.1:
   version "9.6.1"
@@ -3463,13 +3463,6 @@ get-stream@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-8.0.1.tgz#def9dfd71742cd7754a7761ed43749a27d02eca2"
   integrity sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==
-
-get-tsconfig@^4.7.2:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/get-tsconfig/-/get-tsconfig-4.7.2.tgz#0dcd6fb330391d46332f4c6c1bf89a6514c2ddce"
-  integrity sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==
-  dependencies:
-    resolve-pkg-maps "^1.0.0"
 
 get-tsconfig@^4.7.3:
   version "4.7.3"
@@ -6002,23 +5995,13 @@ tsup@8.0.2:
     sucrase "^3.20.3"
     tree-kill "^1.2.2"
 
-tsx@4.8.2:
+tsx@4.8.2, tsx@^4.7.1:
   version "4.8.2"
   resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.8.2.tgz#0897b1ef4b5aca4b2bc6803e5058a2b2633fce4f"
   integrity sha512-hmmzS4U4mdy1Cnzpl/NQiPUC2k34EcNSTZYVJThYKhdqTwuBeF+4cG9KUK/PFQ7KHaAaYwqlb7QfmsE2nuj+WA==
   dependencies:
     esbuild "~0.20.2"
     get-tsconfig "^4.7.3"
-  optionalDependencies:
-    fsevents "~2.3.3"
-
-tsx@^4.1.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.7.0.tgz#1689cfe7dda495ca1f9a66d4cad79cb57b9f6f4a"
-  integrity sha512-I+t79RYPlEYlHn9a+KzwrvEwhJg35h/1zHsLC2JXvhC2mdynMv6Zxzvhv5EMV6VF5qJlLlkSnMVvdZV3PSIGcg==
-  dependencies:
-    esbuild "~0.19.10"
-    get-tsconfig "^4.7.2"
   optionalDependencies:
     fsevents "~2.3.3"
 
