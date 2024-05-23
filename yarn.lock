@@ -697,10 +697,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.3.0.tgz#6d86b8cb322660f03d3f0aa94b99bdd8e172d570"
   integrity sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==
 
-"@iconify/json@2.2.212":
-  version "2.2.212"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.212.tgz#ee0ba898ea632806eb0b0086f9e6c2c2a74cdee0"
-  integrity sha512-d1IXjpbSwk8V3C9D+mruRTJRPqZZpCnOWh9zyG/Zc5zJmPDLBEHNTKz+ZmeiJQ6LdzgjwLJai1WgFvt1HWVIPw==
+"@iconify/json@2.2.213":
+  version "2.2.213"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.213.tgz#b22a0a55b92e9d0cb347bc14299d15a1649889f0"
+  integrity sha512-5tcEn+ZDoWlBXmlJidYjMsJyFXhXuVscbg7PRpaon86GqrDlwW/cl8mR682C06Oq4AfeypmfVI18YTnczwdqxA==
   dependencies:
     "@iconify/types" "*"
     pathe "^1.1.2"
