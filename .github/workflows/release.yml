@@ -90,7 +90,7 @@ jobs:
       - name: Submit to Mozilla
         if: matrix.command == 'Firefox'
         working-directory: ${{ env.DIRECTORY }}-${{ matrix.command }}
-        run: npx web-ext@7 sign --use-submission-api --channel listed
+        run: npx web-ext@8 sign --channel listed
         env:
           WEB_EXT_API_KEY: ${{ secrets.WEB_EXT_API_KEY }}
           WEB_EXT_API_SECRET: ${{ secrets.WEB_EXT_API_SECRET }}
