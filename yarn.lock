@@ -875,9 +875,9 @@
   integrity sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==
 
 "@rollup/plugin-replace@^5.0.2":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-replace/-/plugin-replace-5.0.5.tgz#33d5653dce6d03cb24ef98bef7f6d25b57faefdf"
-  integrity sha512-rYO4fOi8lMaTg/z5Jb+hKnrHHVn8j2lwkqwyS4kTRhKyWOLf2wST2sWXr4WzWiTcoHTp2sTjqUbqIj2E39slKQ==
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-replace/-/plugin-replace-5.0.6.tgz#3a1ea14525424152bb19638500695fd6a21906f1"
+  integrity sha512-n/Eea4MuS38M5iT+0nz7UzSbI4H4hVTKV5hOTAQzNVKT3nYxj8iaG4t9IW86Ugv/jApGY+O+SANAFqWPzZ9xkw==
   dependencies:
     "@rollup/pluginutils" "^5.0.1"
     magic-string "^0.30.3"
@@ -3923,14 +3923,14 @@ lru-cache@^6.0.0:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.1.0.tgz#2098d41c2dc56500e6c88584aa656c84de7d0484"
   integrity sha512-/1clY/ui8CzjKFyjdvwPWJUYKiFVXG2I2cY0ssG7h4+hwk+XOIX7ZSG9Q7TW8TW3Kp3BUSqgFWBLgL4PJ+Blag==
 
-magic-string@^0.30.10:
+magic-string@^0.30.10, magic-string@^0.30.3:
   version "0.30.10"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.10.tgz#123d9c41a0cb5640c892b041d4cfb3bd0aa4b39e"
   integrity sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
 
-magic-string@^0.30.3, magic-string@^0.30.5:
+magic-string@^0.30.5:
   version "0.30.5"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.5.tgz#1994d980bd1c8835dc6e78db7cbd4ae4f24746f9"
   integrity sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==
