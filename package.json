@@ -61,7 +61,7 @@
     "sass": "1.77.6",
     "terser": "^5.16.5",
     "tsup": "8.1.0",
-    "tsx": "4.15.6",
+    "tsx": "4.15.7",
     "typescript": "5.5.2",
     "unocss": "^0.61.0",
     "unplugin-auto-import": "0.17.6",
