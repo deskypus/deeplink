@@ -3272,11 +3272,6 @@ fsevents@~2.3.2, fsevents@~2.3.3:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
-function-bind@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.2.tgz#2c02d864d97f3ea6c8830c464cbd11ab6eab7a1c"
-  integrity sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==
-
 fx-runner@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/fx-runner/-/fx-runner-1.4.0.tgz#7a3f0374cc78c6c689ef75937b7b0cd75428c509"
@@ -3501,13 +3496,6 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
-hasown@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/hasown/-/hasown-2.0.0.tgz#f4c513d454a57b7c7e1650778de226b11700546c"
-  integrity sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==
-  dependencies:
-    function-bind "^1.1.2"
-
 htmlparser2@^8.0.1:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-8.0.2.tgz#f002151705b383e62433b5cf466f5b716edaec21"
@@ -3655,13 +3643,6 @@ is-binary-path@~2.1.0:
   integrity sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
   dependencies:
     binary-extensions "^2.0.0"
-
-is-core-module@^2.13.0:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.1.tgz#ad0d7532c6fea9da1ebdc82742d74525c6273384"
-  integrity sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==
-  dependencies:
-    hasown "^2.0.0"
 
 is-docker@^2.0.0:
   version "2.2.1"
@@ -4211,6 +4192,16 @@ mlly@^1.4.2, mlly@^1.6.1, mlly@^1.7.0:
     pkg-types "^1.1.0"
     ufo "^1.5.3"
 
+mlly@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/mlly/-/mlly-1.7.1.tgz#e0336429bb0731b6a8e887b438cbdae522c8f32f"
+  integrity sha512-rrVRZRELyQzrIUAVMHxP97kv+G786pHmOKzuFII8zDYahFBS7qnHh2AlYSl1GAHhaMPCz6/oHjVMcfFYgFYHgA==
+  dependencies:
+    acorn "^8.11.3"
+    pathe "^1.1.2"
+    pkg-types "^1.1.1"
+    ufo "^1.5.3"
+
 moment@^2.19.3:
   version "2.30.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.30.1.tgz#f8c91c07b7a786e30c59926df530b4eac96974ae"
@@ -4585,11 +4576,6 @@ path-key@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-4.0.0.tgz#295588dc3aee64154f877adb9d780b81c554bf18"
   integrity sha512-haREypq7xkM7ErfgIyA0z+Bj4AGKlMSdlQE2jvJo6huWD1EdkKYV+G/T4nq0YEF2vgTT8kqMFKo1uHn950r4SQ==
 
-path-parse@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
-  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
-
 path-scurry@^1.10.1:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.10.1.tgz#9ba6bf5aa8500fe9fd67df4f0d9483b2b0bfc698"
@@ -4684,7 +4670,7 @@ pirates@^4.0.1:
   resolved "https://registry.yarnpkg.com/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
   integrity sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==
 
-pkg-types@^1.0.3, pkg-types@^1.1.0:
+pkg-types@^1.0.3, pkg-types@^1.1.0, pkg-types@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-1.1.1.tgz#07b626880749beb607b0c817af63aac1845a73f2"
   integrity sha512-ko14TjmDuQJ14zsotODv7dBlwxKhUKQEhuhmbqo1uCi9BB0Z2alo/wAXg6q1dTR5TyuqYyWhjtfe/Tsh+X28jQ==
@@ -4945,15 +4931,6 @@ resolve-protobuf-schema@^2.1.0:
   integrity sha512-kI5ffTiZWmJaS/huM8wZfEMer1eRd7oJQhDuxeCLe3t7N7mX3z94CN0xPxBQxFYQTSNz9T0i+v6inKqSdK8xrQ==
   dependencies:
     protocol-buffers-schema "^3.3.1"
-
-resolve@^1.22.8:
-  version "1.22.8"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.8.tgz#b6c87a9f2aa06dfab52e3d70ac8cde321fa5a48d"
-  integrity sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==
-  dependencies:
-    is-core-module "^2.13.0"
-    path-parse "^1.0.7"
-    supports-preserve-symlinks-flag "^1.0.0"
 
 responselike@^3.0.0:
   version "3.0.0"
@@ -5411,11 +5388,6 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-preserve-symlinks-flag@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
-  integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
-
 synckit@^0.8.6:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.8.tgz#fe7fe446518e3d3d49f5e429f443cf08b6edfcd7"
@@ -5752,10 +5724,10 @@ unplugin-icons@0.19.0:
     local-pkg "^0.5.0"
     unplugin "^1.10.1"
 
-unplugin-vue-components@0.27.0:
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-0.27.0.tgz#f504c5d526d7f2b779003a76070b18d84e40fc54"
-  integrity sha512-77eTEy23sQ0UpzGWnZ9I2mY3cnmXwklz4ITcn3JfxjCoX643ghImkiZ4nFm58sxbdVcc4Fo/o4LIoFnlqEqsSg==
+unplugin-vue-components@0.27.1:
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-0.27.1.tgz#5f488f85e76edc51f7eff6f90d0646a4fbb1151b"
+  integrity sha512-ximoYPwT9A5fc0ozy40IZbXR/XMRlTy69u4JfeqBMlsyuKHckQRisRqgzqve6m/ZeOh7eCHjEQP1WnBPW+YI+g==
   dependencies:
     "@antfu/utils" "^0.7.7"
     "@rollup/pluginutils" "^5.1.0"
@@ -5765,7 +5737,7 @@ unplugin-vue-components@0.27.0:
     local-pkg "^0.5.0"
     magic-string "^0.30.10"
     minimatch "^9.0.4"
-    resolve "^1.22.8"
+    mlly "^1.7.1"
     unplugin "^1.10.1"
 
 unplugin@^1.10.1:
