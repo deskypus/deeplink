@@ -4148,7 +4148,7 @@ minimatch@9.0.3, minimatch@^9.0.0:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^10.0.0, minimatch@^10.0.1:
+minimatch@^10.0.0:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-10.0.1.tgz#ce0521856b453c86e25f2c4c0d03e6ff7ddc440b"
   integrity sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==
@@ -5690,17 +5690,17 @@ unocss@^0.61.0:
     "@unocss/transformer-variant-group" "0.61.5"
     "@unocss/vite" "0.61.5"
 
-unplugin-auto-import@0.18.1:
-  version "0.18.1"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.18.1.tgz#6e19d687e6965a40fc99b4b4190a7a57cd91c3cc"
-  integrity sha512-BDBShopGfQPXEu0zdiEe1gSqUUMywFfqaOwt7x+ki3kaF+IfL6a5SRrilexw/sMiaLrNCIby7l8Ko3+wzd6EFg==
+unplugin-auto-import@0.18.2:
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.18.2.tgz#6e2d94847124a5941ea0ab8e6f516569de4c9eb7"
+  integrity sha512-Dwb3rAic75harVBrVjwiq6H24PT+nBq2dpxV5BH8NNI6sDFaTytvP+iyo4xy7prQbR3r5K6nMs4f5Wp9PE4g8A==
   dependencies:
     "@antfu/utils" "^0.7.10"
     "@rollup/pluginutils" "^5.1.0"
     fast-glob "^3.3.2"
     local-pkg "^0.5.0"
     magic-string "^0.30.10"
-    minimatch "^10.0.1"
+    minimatch "^9.0.5"
     unimport "^3.9.0"
     unplugin "^1.11.0"
 
