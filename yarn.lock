@@ -816,19 +816,6 @@
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
 
-"@iconify/utils@^2.1.23":
-  version "2.1.23"
-  resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.23.tgz#1cde237dd5142a66d9fbd065b2fa7acc4f80f862"
-  integrity sha512-YGNbHKM5tyDvdWZ92y2mIkrfvm5Fvhe6WJSkWu7vvOFhMtYDP0casZpoRz0XEHZCrYsR4stdGT3cZ52yp5qZdQ==
-  dependencies:
-    "@antfu/install-pkg" "^0.1.1"
-    "@antfu/utils" "^0.7.7"
-    "@iconify/types" "^2.0.0"
-    debug "^4.3.4"
-    kolorist "^1.8.0"
-    local-pkg "^0.5.0"
-    mlly "^1.6.1"
-
 "@iconify/utils@^2.1.25":
   version "2.1.25"
   resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.25.tgz#ed4ec0c0562449c0d2fd4ee476b5eb172a9154bf"
@@ -841,6 +828,19 @@
     kolorist "^1.8.0"
     local-pkg "^0.5.0"
     mlly "^1.6.1"
+
+"@iconify/utils@^2.1.29":
+  version "2.1.29"
+  resolved "https://registry.yarnpkg.com/@iconify/utils/-/utils-2.1.29.tgz#0ec13fb0376089059dac25fa890a7040f11ea229"
+  integrity sha512-wCcTsmlJvTi1VWBgcJ7HeuWlh7gLGWY7L9HmbgMfjOfsoo7DADemB2Nqnrw1KvCdEAxLL5wTMBAOP5BesFrtng==
+  dependencies:
+    "@antfu/install-pkg" "^0.1.1"
+    "@antfu/utils" "^0.7.10"
+    "@iconify/types" "^2.0.0"
+    debug "^4.3.5"
+    kolorist "^1.8.0"
+    local-pkg "^0.5.0"
+    mlly "^1.7.1"
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -2482,6 +2482,13 @@ debug@^4, debug@^4.1.0, debug@^4.3.1, debug@^4.3.4, debug@^4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.5.tgz#e83444eceb9fedd4a1da56d671ae2446a01a6e1e"
   integrity sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.6:
+  version "4.3.6"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.6.tgz#2ab2c38fbaffebf8aa95fdfe6d88438c7a13c52b"
+  integrity sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==
   dependencies:
     ms "2.1.2"
 
@@ -5653,18 +5660,18 @@ unplugin-auto-import@0.18.2:
     unimport "^3.9.0"
     unplugin "^1.11.0"
 
-unplugin-icons@0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.19.0.tgz#867d2a3f95b00737c9f5bd7d2da0f5b8e65fd1a6"
-  integrity sha512-u5g/gIZPZEj1wUGEQxe9nzftOSqmblhusc+sL3cawIRoIt/xWpE6XYcPOfAeFTYNjSbRrX/3QiX89PFiazgU1w==
+unplugin-icons@0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.19.1.tgz#82934cc7353f5d0e5423c859cd22e7a39f854594"
+  integrity sha512-a5I+wSOO5lsgc4dB2nEFaSZ4eEgQvSSR8tSR2jT69nTKiVmcK+PPU633zn2FyRf9i6vLapUiQ28GQStfzGURdg==
   dependencies:
     "@antfu/install-pkg" "^0.3.3"
-    "@antfu/utils" "^0.7.7"
-    "@iconify/utils" "^2.1.23"
-    debug "^4.3.4"
+    "@antfu/utils" "^0.7.10"
+    "@iconify/utils" "^2.1.29"
+    debug "^4.3.6"
     kolorist "^1.8.0"
     local-pkg "^0.5.0"
-    unplugin "^1.10.1"
+    unplugin "^1.12.0"
 
 unplugin-vue-components@0.27.3:
   version "0.27.3"
@@ -5682,16 +5689,6 @@ unplugin-vue-components@0.27.3:
     mlly "^1.7.1"
     unplugin "^1.11.0"
 
-unplugin@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.10.1.tgz#8ceda065dc71bc67d923dea0920f05c67f2cd68c"
-  integrity sha512-d6Mhq8RJeGA8UfKCu54Um4lFA0eSaRa3XxdAJg8tIdxbu1ubW0hBCZUL7yI2uGyYCRndvbK8FLHzqy2XKfeMsg==
-  dependencies:
-    acorn "^8.11.3"
-    chokidar "^3.6.0"
-    webpack-sources "^3.2.3"
-    webpack-virtual-modules "^0.6.1"
-
 unplugin@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.11.0.tgz#09237b4011075e65c8f4d0ae06e221dee12750e3"
@@ -5701,6 +5698,16 @@ unplugin@^1.11.0:
     chokidar "^3.6.0"
     webpack-sources "^3.2.3"
     webpack-virtual-modules "^0.6.1"
+
+unplugin@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.12.0.tgz#a11d3eb565602190748b1f95ecc8590b0f7dcbb4"
+  integrity sha512-KeczzHl2sATPQUx1gzo+EnUkmN4VmGBYRRVOZSGvGITE9rGHRDGqft6ONceP3vgXcyJ2XjX5axG5jMWUwNCYLw==
+  dependencies:
+    acorn "^8.12.1"
+    chokidar "^3.6.0"
+    webpack-sources "^3.2.3"
+    webpack-virtual-modules "^0.6.2"
 
 untildify@^4.0.0:
   version "4.0.0"
@@ -5906,6 +5913,11 @@ webpack-virtual-modules@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.6.1.tgz#ac6fdb9c5adb8caecd82ec241c9631b7a3681b6f"
   integrity sha512-poXpCylU7ExuvZK8z+On3kX+S8o/2dQ/SVYueKA0D4WEMXROXgY8Ez50/bQEUmvoSMMrWcrJqCHuhAbsiwg7Dg==
+
+webpack-virtual-modules@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.6.2.tgz#057faa9065c8acf48f24cb57ac0e77739ab9a7e8"
+  integrity sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==
 
 whatwg-url@^7.0.0:
   version "7.1.0"
