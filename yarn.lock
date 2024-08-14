@@ -769,9 +769,9 @@
   integrity sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==
 
 "@ffflorian/jszip-cli@^3.4.1":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.7.0.tgz#9efc864555a69a7d3ead5788adc8344a8bb73dfc"
-  integrity sha512-TwbqtEs5uvxxbJBi2zsOzt1qf2uIEw2z3ff1QNJVewQnrgeWwA6mIsW+0uskZIZ98wU79YBUR0tzWE8+tV8V4g==
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.7.1.tgz#9842a0c877e945bd0a82282264b3524079e07f89"
+  integrity sha512-Gv+uglNfzyuaZT25Q6vz1HcrMy4ke7EDPgN+TykuXGrLAzrcv3hwNCAXPNeAKV/Px4IsI6ByNVkKuY0AEW8Fxg==
   dependencies:
     commander "12.1.0"
     cosmiconfig "9.0.0"
