@@ -1342,10 +1342,10 @@
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
-"@types/webextension-polyfill@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@types/webextension-polyfill/-/webextension-polyfill-0.12.0.tgz#eac57362d021d08d8d30fe0b7bae447896346aa5"
-  integrity sha512-0d1V0jw5wswj11ijrPoUUP+kV2pHCNKDDgQSzNdD1PK5i3vQ0eHiA1xzT5mFwaqdwatrXdgkxgC4BzCQ6C9eUw==
+"@types/webextension-polyfill@0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@types/webextension-polyfill/-/webextension-polyfill-0.12.1.tgz#8dae244fe094cbb541005362e8e22f16671f6054"
+  integrity sha512-xPTFWwQ8BxPevPF2IKsf4hpZNss4LxaOLZXypQH4E63BDLmcwX/RMGdI4tB4VO4Nb6xDBH3F/p4gz4wvof1o9w==
 
 "@types/webextension-polyfill@^0.8.3":
   version "0.8.3"
