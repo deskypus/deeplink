@@ -23,13 +23,6 @@
     execa "^5.1.1"
     find-up "^5.0.0"
 
-"@antfu/install-pkg@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-0.3.3.tgz#34c3837132157e6ca23fe9587d1e174b0f33dc1a"
-  integrity sha512-nHHsk3NXQ6xkCfiRRC8Nfrg8pU5kkr3P3Y9s9dKqiuRmBD0Yap7fymNDjGFKeWhZQHqqbCS5CfeMy9wtExM24w==
-  dependencies:
-    "@jsdevtools/ez-spawn" "^3.0.4"
-
 "@antfu/install-pkg@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-0.4.0.tgz#9568f6f84f4ca7bb1e4ec36307f4c67d0b9b9ade"
@@ -37,6 +30,14 @@
   dependencies:
     package-manager-detector "^0.1.1"
     tinyexec "^0.2.0"
+
+"@antfu/install-pkg@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-0.4.1.tgz#d1d7f3be96ecdb41581629cafe8626d1748c0cf1"
+  integrity sha512-T7yB5QNG29afhWVkVq7XeIMBa5U/vs9mX69YqayXypPRmYzUmzwnYltplHmPtZ4HPCn+sQKeXW8I47wCbuBOjw==
+  dependencies:
+    package-manager-detector "^0.2.0"
+    tinyexec "^0.3.0"
 
 "@antfu/utils@^0.7.10":
   version "0.7.10"
@@ -1039,16 +1040,6 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
-
-"@jsdevtools/ez-spawn@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@jsdevtools/ez-spawn/-/ez-spawn-3.0.4.tgz#5641eb26fee6d31ec29f6788eba849470c52c7ff"
-  integrity sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==
-  dependencies:
-    call-me-maybe "^1.0.1"
-    cross-spawn "^7.0.3"
-    string-argv "^0.3.1"
-    type-detect "^4.0.8"
 
 "@mdn/browser-compat-data@5.5.34":
   version "5.5.34"
@@ -2271,11 +2262,6 @@ cac@^6.7.14:
   version "6.7.14"
   resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.14.tgz#804e1e6f506ee363cb0e3ccbb09cad5dd9870959"
   integrity sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==
-
-call-me-maybe@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/call-me-maybe/-/call-me-maybe-1.0.2.tgz#03f964f19522ba643b1b0693acb9152fe2074baa"
-  integrity sha512-HpX65o1Hnr9HH25ojC1YGs7HCQLq0GCOibSaWER0eNpgJ/Z1MZv2mTc7+xh6WOPxbRVcmgbv4hGU+uSQ/2xFZQ==
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -4666,6 +4652,11 @@ package-manager-detector@^0.1.1:
   resolved "https://registry.yarnpkg.com/package-manager-detector/-/package-manager-detector-0.1.2.tgz#3e20f82cb6f6f2cc66e6cda64a5f054ce5396192"
   integrity sha512-iePyefLTOm2gEzbaZKSW+eBMjg+UYsQvUKxmvGXAQ987K16efBg10MxIjZs08iyX+DY2/owKY9DIdu193kX33w==
 
+package-manager-detector@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/package-manager-detector/-/package-manager-detector-0.2.0.tgz#160395cd5809181f5a047222319262b8c2d8aaea"
+  integrity sha512-E385OSk9qDcXhcM9LNSe4sdhx8a9mAPrZ4sMLW+tmxl5ZuGtPUcdFu+MPP2jbgiWAZ6Pfe5soGFMd+0Db5Vrog==
+
 pako@~1.0.2:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -5393,11 +5384,6 @@ split@~1.0.1:
   dependencies:
     through "2"
 
-string-argv@^0.3.1:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.3.2.tgz#2b6d0ef24b656274d957d54e0a4bbf6153dc02b6"
-  integrity sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==
-
 "string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
@@ -5631,6 +5617,11 @@ tinyexec@^0.2.0:
   resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-0.2.0.tgz#85411bbec5964a8cb1f7ebe4e3850860809d04fb"
   integrity sha512-au8dwv4xKSDR+Fw52csDo3wcDztPdne2oM1o/7LFro4h6bdFmvyUAeAfX40pwDtzHgRFqz1XWaUqgKS2G83/ig==
 
+tinyexec@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-0.3.0.tgz#ed60cfce19c17799d4a241e06b31b0ec2bee69e6"
+  integrity sha512-tVGE0mVJPGb0chKhqmsoosjsS+qUnJVGJpZgsHYQcGoPlG3B51R3PouqTgEGH2Dc9jjFyOqOpix6ZHNMXp1FZg==
+
 tinyglobby@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.5.tgz#8cdd1df1b155bf2a3c4d5ea2581489f967a38318"
@@ -5767,11 +5758,6 @@ type-check@^0.4.0, type-check@~0.4.0:
   dependencies:
     prelude-ls "^1.2.1"
 
-type-detect@^4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
-  integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
-
 type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
@@ -5900,12 +5886,12 @@ unplugin-auto-import@0.18.2:
     unimport "^3.9.0"
     unplugin "^1.11.0"
 
-unplugin-icons@0.19.2:
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.19.2.tgz#f446a5c105787217f5002eb2da39fb994fa05113"
-  integrity sha512-QkQJ/Iz3PFr/EoiOvFUQYvqbbJZ7Vs3hObKAFHh5eywTU1PQagSNeXKGRD+JpzXSTnUNLtG0u/xEA5Ec2OeANQ==
+unplugin-icons@0.19.3:
+  version "0.19.3"
+  resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.19.3.tgz#07dcd77ecf973b234c76e4bc11df1380b5ac7fab"
+  integrity sha512-EUegRmsAI6+rrYr0vXjFlIP+lg4fSC4zb62zAZKx8FGXlWAGgEGBCa3JDe27aRAXhistObLPbBPhwa/0jYLFkQ==
   dependencies:
-    "@antfu/install-pkg" "^0.3.3"
+    "@antfu/install-pkg" "^0.4.1"
     "@antfu/utils" "^0.7.10"
     "@iconify/utils" "^2.1.29"
     debug "^4.3.6"
