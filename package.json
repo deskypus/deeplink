@@ -44,7 +44,7 @@
     "@vue/eslint-config-prettier": "9.0.0",
     "@vue/eslint-config-typescript": "13.0.0",
     "@vueuse/core": "11.1.0",
-    "chokidar": "4.0.0",
+    "chokidar": "4.0.1",
     "cross-env": "7.0.3",
     "crx": "5.0.1",
     "eslint": "9.11.0",
