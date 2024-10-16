@@ -1470,10 +1470,10 @@
     eslint-config-prettier "^9.1.0"
     eslint-plugin-prettier "^5.2.1"
 
-"@vue/eslint-config-typescript@14.1.0":
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-14.1.0.tgz#976b639b0deba552144cd816dc0eb4736a270513"
-  integrity sha512-VACqVxqyOQDtjxCSapFF6869wzozmGrofz7zVlis5W9bSy/wGm6F8F55WFEnK2/hqWWUnuaIycpNuzyi1AYKWA==
+"@vue/eslint-config-typescript@14.1.1":
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-14.1.1.tgz#7a1956cca1e71cd3678b60486a8030dfd30076d6"
+  integrity sha512-zw6q8pXUuFHfdZsdKYr344giBRhnq6WmWSO2abFHajxR8wDX2p2hkj0/Mf6W2phTkerU4b8WF2jgq2Z/c+PdMA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^8.8.1"
     fast-glob "^3.3.2"
