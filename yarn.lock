@@ -568,9 +568,9 @@
     levn "^0.4.1"
 
 "@ffflorian/jszip-cli@^3.4.1":
-  version "3.7.3"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.7.3.tgz#4952250c2c7f4ec80e539efd6c76c449d60b8d91"
-  integrity sha512-dZM9xPNE7MJyzVS2Nz7ylvT0GrNom1iqrhJdlYjf/xaPr4/TClSVUS2hGKNjtmnCvH5K11sX7PFPmf4pi/rxFA==
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.8.0.tgz#2ce0460a7aa49b697525e311ad00aaeffbaaa3da"
+  integrity sha512-VP1lfmXLExI/KhXehcwPZL9zNHKSc2EeSToqQxgKaopzI6nrEmcV8PhdXELJVV2f1/h7Oj/2i/5EdJpho7FIkw==
   dependencies:
     commander "12.1.0"
     cosmiconfig "9.0.0"
@@ -2261,7 +2261,16 @@ cross-env@7.0.3:
   dependencies:
     cross-spawn "^7.0.1"
 
-cross-spawn@^7.0.0, cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3, cross-spawn@^7.0.5:
+cross-spawn@^7.0.0:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.6.tgz#8a58fe78f00dcd70c370451759dfbfaf03e8ee9f"
+  integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
+  dependencies:
+    path-key "^3.1.0"
+    shebang-command "^2.0.0"
+    which "^2.0.1"
+
+cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3, cross-spawn@^7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.5.tgz#910aac880ff5243da96b728bc6521a5f6c2f2f82"
   integrity sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==
