@@ -512,10 +512,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.1.tgz#9a96ce501bc62df46c4031fbd970e3cc6b10f07b"
   integrity sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==
 
-"@iconify/json@2.2.283":
-  version "2.2.283"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.283.tgz#3d503e0dfb242547c2bc2ef34547abb5f824d5c6"
-  integrity sha512-Je/7d+MeStySzSz4DhRYWREd4+kpf+JW+884In115s1uuZcnRNH14avaSdf5SU6u1VOUN4HvpcG8fUaVvhg97w==
+"@iconify/json@2.2.284":
+  version "2.2.284"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.284.tgz#fcc62d51be367e96bbc07f87e7525383f9c8d68a"
+  integrity sha512-s+DpI5CWkLwnRIwF5wg32OJBitqwD0PvVxVRj5WvBO6v8wLJvkxjOG0G/UmS8sWhwyMjfLsAK6NL71LPBNjsvw==
   dependencies:
     "@iconify/types" "*"
     pathe "^1.1.2"
@@ -757,7 +757,7 @@
     "@rollup/pluginutils" "^5.0.1"
     magic-string "^0.30.3"
 
-"@rollup/pluginutils@^5.0.1":
+"@rollup/pluginutils@^5.0.1", "@rollup/pluginutils@^5.1.4":
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.1.4.tgz#bb94f1f9eaaac944da237767cdfee6c5b2262d4a"
   integrity sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==
@@ -770,15 +770,6 @@
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.1.3.tgz#3001bf1a03f3ad24457591f2c259c8e514e0dbdf"
   integrity sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==
-  dependencies:
-    "@types/estree" "^1.0.0"
-    estree-walker "^2.0.2"
-    picomatch "^4.0.2"
-
-"@rollup/pluginutils@^5.1.4":
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.1.4.tgz#bb94f1f9eaaac944da237767cdfee6c5b2262d4a"
-  integrity sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==
   dependencies:
     "@types/estree" "^1.0.0"
     estree-walker "^2.0.2"
