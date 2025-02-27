@@ -5132,7 +5132,7 @@ undici-types@~6.20.0:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.20.0.tgz#8171bf22c1f588d1554d55bf204bc624af388433"
   integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
-unimport@^4.1.1:
+unimport@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/unimport/-/unimport-4.1.2.tgz#10ba452519ec23113c1e68b8e9ab26c307a6eebd"
   integrity sha512-oVUL7PSlyVV3QRhsdcyYEMaDX8HJyS/CnUonEJTYA3//bWO+o/4gG8F7auGWWWkrrxBQBYOO8DKe+C53ktpRXw==
@@ -5181,15 +5181,15 @@ unocss@^66.0.0:
     "@unocss/transformer-variant-group" "66.0.0"
     "@unocss/vite" "66.0.0"
 
-unplugin-auto-import@19.1.0:
-  version "19.1.0"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-19.1.0.tgz#bf51036437c5e7478dfe80da5a260c598bd07856"
-  integrity sha512-B+TGBEBHqY9aR+7YfShfLujETOHstzpV+yaqgy5PkfV0QG7Py+TYMX7vJ9W4SrysHR+UzR+gzcx/nuZjmPeclA==
+unplugin-auto-import@19.1.1:
+  version "19.1.1"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-19.1.1.tgz#a95a54b9338bc840f84839e917066b0f113de13b"
+  integrity sha512-sCGZZrSR1Bc8RfN8Q0RUDxXtC20rdAt7UB4lDyq8MNtKVHiXXh+5af6Nz4JRp9Q+7HjnbgQfQox0TkEymjdUAQ==
   dependencies:
     local-pkg "^1.0.0"
     magic-string "^0.30.17"
     picomatch "^4.0.2"
-    unimport "^4.1.1"
+    unimport "^4.1.2"
     unplugin "^2.2.0"
     unplugin-utils "^0.2.4"
 
