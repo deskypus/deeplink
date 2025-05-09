@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "8.32.0",
     "@typescript-eslint/parser": "8.32.0",
     "@unocss/reset": "^66.0.0",
-    "@vitejs/plugin-vue": "5.2.3",
+    "@vitejs/plugin-vue": "5.2.4",
     "@vue/compiler-sfc": "3.5.13",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "14.5.0",
