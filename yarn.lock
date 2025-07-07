@@ -5253,10 +5253,10 @@ uuid@^8.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
-vite@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-7.0.1.tgz#b7ebb1e8a7d7f0f42867a545561fb72b34b2b13f"
-  integrity sha512-BiKOQoW5HGR30E6JDeNsati6HnSPMVEKbkIWbCiol+xKeu3g5owrjy7kbk/QEMuzCV87dSUTvycYKmlcfGKq3Q==
+vite@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-7.0.2.tgz#66ddf890c4357f4fb6803a787dc210538591b917"
+  integrity sha512-hxdyZDY1CM6SNpKI4w4lcUc3Mtkd9ej4ECWVHSMrOdSinVc2zYOAppHeGc/hzmRo3pxM5blMzkuWHOJA/3NiFw==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.4.6"
