@@ -51,7 +51,7 @@
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-vue": "10.3.0",
     "esno": "^4.0.0",
-    "fs-extra": "11.3.0",
+    "fs-extra": "11.3.1",
     "js-cookie": "3.0.5",
     "kolorist": "1.8.0",
     "nodemon": "^3.0.0",
