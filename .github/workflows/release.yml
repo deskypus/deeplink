@@ -20,7 +20,7 @@ jobs:
           - Chrome
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
 
       - uses: actions/setup-node@v4
         with:
@@ -52,7 +52,7 @@ jobs:
       # The checkout step is needed so that the GitHub CLI
       # can lookup some git config stuff in order to create
       # the release.
-      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
 
       - uses: actions/download-artifact@v5
 
