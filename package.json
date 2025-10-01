@@ -62,7 +62,7 @@
     "terser": "^5.16.5",
     "tsup": "8.5.0",
     "tsx": "4.20.6",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "unocss": "^66.0.0",
     "unplugin-auto-import": "20.2.0",
     "unplugin-icons": "22.3.0",
