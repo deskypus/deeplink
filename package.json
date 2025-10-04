@@ -47,7 +47,7 @@
     "chokidar": "4.0.3",
     "cross-env": "10.0.0",
     "crx": "5.0.1",
-    "eslint": "9.36.0",
+    "eslint": "9.37.0",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-vue": "10.5.0",
     "esno": "^4.0.0",
