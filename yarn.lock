@@ -567,13 +567,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.2.tgz#1860473de7dfa1546767448f333db80cb0ff2161"
   integrity sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==
 
-"@iconify/json@2.2.391":
-  version "2.2.391"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.391.tgz#9c6e20df3fe620ffb071d97e5a3ef526ae080440"
-  integrity sha512-RQGiFsnxHvyn0bT5TZvI9XKI++Kto9kzXEBUOemNdci+r6qUVs/w7/20JcgCf3rv6fgtENHtj5Uf5S0ColSJ4A==
+"@iconify/json@2.2.392":
+  version "2.2.392"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.392.tgz#de54b9a5260b216e37b685ad77a3fa1281c42480"
+  integrity sha512-WkkQIDpmgetgvIn1jso6XKY3S5Pf9L6QD1J2RNLeiF+jzdouyayoRm2LLxe4dmnp9i3Cbf8w7oRuaVlhwK8Xtg==
   dependencies:
     "@iconify/types" "*"
-    pathe "^1.1.2"
+    pathe "^2.0.0"
 
 "@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
@@ -4203,12 +4203,7 @@ path-scurry@^2.0.0:
     lru-cache "^11.0.0"
     minipass "^7.1.2"
 
-pathe@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
-  integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
-
-pathe@^2.0.1, pathe@^2.0.3:
+pathe@^2.0.0, pathe@^2.0.1, pathe@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
   integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
