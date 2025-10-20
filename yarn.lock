@@ -5273,7 +5273,7 @@ unplugin-icons@22.4.2:
     local-pkg "^1.1.2"
     unplugin "^2.3.10"
 
-unplugin-utils@^0.3.0:
+unplugin-utils@^0.3.0, unplugin-utils@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/unplugin-utils/-/unplugin-utils-0.3.1.tgz#ef2873670a6a2a21bd2c9d31307257cc863a709c"
   integrity sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog==
@@ -5281,10 +5281,10 @@ unplugin-utils@^0.3.0:
     pathe "^2.0.3"
     picomatch "^4.0.3"
 
-unplugin-vue-components@29.1.0:
-  version "29.1.0"
-  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-29.1.0.tgz#6064dfd43ebfc2d54fc04d6c391d30c9f66d3360"
-  integrity sha512-z/9ACPXth199s9aCTCdKZAhe5QGOpvzJYP+Hkd0GN1/PpAmsu+W3UlRY3BJAewPqQxh5xi56+Og6mfiCV1Jzpg==
+unplugin-vue-components@29.2.0:
+  version "29.2.0"
+  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-29.2.0.tgz#5cf1aace82f6e7481fb068e6d23f33ef1ef849d6"
+  integrity sha512-QxBeBdmEflgtJRgMQMc/z/JVV5lcwXN5nOy5ehX6CKDGylIu6Qn4Goy8X95S0qOxF7EdI+uNhdBd4v5i0bvzCw==
   dependencies:
     chokidar "^3.6.0"
     debug "^4.4.3"
@@ -5293,7 +5293,7 @@ unplugin-vue-components@29.1.0:
     mlly "^1.8.0"
     tinyglobby "^0.2.15"
     unplugin "^2.3.10"
-    unplugin-utils "^0.3.0"
+    unplugin-utils "^0.3.1"
 
 unplugin@^2.3.10:
   version "2.3.10"
