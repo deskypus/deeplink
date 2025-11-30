@@ -2642,7 +2642,7 @@ es6-error@4.1.1:
   resolved "https://registry.yarnpkg.com/es6-error/-/es6-error-4.1.1.tgz#9e3af407459deed47e9a91f9b885a84eb05c561d"
   integrity sha512-Um/+FxMr9CISWh0bi5Zv0iOD+4cFh5qLeks1qhAopKVAJw3drgKbKySikp7wGhDL0HPeaja0P5ULZrxLkniUVg==
 
-esbuild@^0.25.0, esbuild@~0.25.0:
+esbuild@^0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.25.0.tgz#0de1787a77206c5a79eeb634a623d39b5006ce92"
   integrity sha512-BXq5mqc8ltbaN34cDqWuYKyNhX8D/Z0J1xdtdQ8UcIIIyJyz+ZMKUt58tF3SrZ85jcfN/PZYhjR5uDQAYNVbuw==
@@ -2673,7 +2673,7 @@ esbuild@^0.25.0, esbuild@~0.25.0:
     "@esbuild/win32-ia32" "0.25.0"
     "@esbuild/win32-x64" "0.25.0"
 
-esbuild@^0.27.0:
+esbuild@^0.27.0, esbuild@~0.27.0:
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.27.0.tgz#db983bed6f76981361c92f50cf6a04c66f7b3e1d"
   integrity sha512-jd0f4NHbD6cALCyGElNpGAOtWxSq46l9X/sWB0Nzd5er4Kz2YTm+Vl0qKFT9KUJvD8+fiO8AvoHhFvEatfVixA==
@@ -5131,12 +5131,12 @@ tsup@8.5.1:
     tinyglobby "^0.2.11"
     tree-kill "^1.2.2"
 
-tsx@4.20.6:
-  version "4.20.6"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.20.6.tgz#8fb803fd9c1f70e8ccc93b5d7c5e03c3979ccb2e"
-  integrity sha512-ytQKuwgmrrkDTFP4LjR0ToE2nqgy886GpvRSpU0JAnrdBYppuY5rLkRUYPU1yCryb24SsKBTL/hlDQAEFVwtZg==
+tsx@4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.21.0.tgz#32aa6cf17481e336f756195e6fe04dae3e6308b1"
+  integrity sha512-5C1sg4USs1lfG0GFb2RLXsdpXqBSEhAaA/0kPL01wxzpMqLILNxIxIOKiILz+cdg/pLnOUxFYOR5yhHU666wbw==
   dependencies:
-    esbuild "~0.25.0"
+    esbuild "~0.27.0"
     get-tsconfig "^4.7.5"
   optionalDependencies:
     fsevents "~2.3.3"
