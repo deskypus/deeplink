@@ -595,9 +595,9 @@
     levn "^0.4.1"
 
 "@ffflorian/jszip-cli@^3.4.1":
-  version "3.12.2"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.12.2.tgz#8d6e3a36c56a5755850cde532e58c787c04173cd"
-  integrity sha512-THbC6lYjduS4wA+6b7Vx8o2Qa5Zw7CkqbWY+dM7Mc2olpUuA6Gu/x9KxgkJyUj58CT4n46p40pwisroxvgPzrw==
+  version "3.12.5"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.12.5.tgz#767872701da2c594556f7d34a55490c04c95d3e6"
+  integrity sha512-Od0qxZVrPKZGySPLtHMHIHFmx01QXnEjoGMWofA/uUsEVJCkH5AfQa5o8fpN6nemURPeffeXYMLWqSO9jaL0RA==
   dependencies:
     commander "14.0.2"
     cosmiconfig "9.0.0"
@@ -3834,9 +3834,9 @@ logdown@3.3.1:
     chalk "^2.3.0"
 
 lru-cache@^11.0.0:
-  version "11.2.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-11.2.2.tgz#40fd37edffcfae4b2940379c0722dc6eeaa75f24"
-  integrity sha512-F9ODfyqML2coTIsQpSkRHnLSZMtkU8Q+mSfcaIyKwy58u+8k5nvAYeiNhsyMARvzNcXJ9QfWVrcPsC9e9rAxtg==
+  version "11.2.4"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-11.2.4.tgz#ecb523ebb0e6f4d837c807ad1abaea8e0619770d"
+  integrity sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==
 
 "lru-cache@^9.1.1 || ^10.0.0":
   version "10.1.0"
