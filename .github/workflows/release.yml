@@ -39,7 +39,7 @@ jobs:
         run: yarn run build:firefox
 
       - name: Ready for "submit" jobs
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           path: ${{ env.DIRECTORY }}
           name: ${{ env.DIRECTORY }}-${{ matrix.command }}
@@ -54,7 +54,7 @@ jobs:
       # the release.
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
 
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
 
       - name: Create release
         env:
@@ -85,7 +85,7 @@ jobs:
     environment: ${{ matrix.command }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
 
       - name: Submit to Mozilla
         if: matrix.command == 'Firefox'
