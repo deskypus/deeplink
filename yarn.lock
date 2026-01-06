@@ -477,9 +477,9 @@
     levn "^0.4.1"
 
 "@ffflorian/jszip-cli@^3.4.1":
-  version "3.12.8"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.12.8.tgz#25a77d6773cb173dbff11b09863ed4e26a734c80"
-  integrity sha512-WrX60rtodGHIPN9SXbwmgR+RvW3jpnTtgvqT4/D6CBmw0BrgQf0hA26KKTRN+NzsjOdkfbwwU5xkQV8sXLfbDQ==
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-3.13.1.tgz#5bda435a63e959b7909ca274720aec4cd2978dcb"
+  integrity sha512-3uwDyWr5Fijd18Q++eJjck/+KHhlEDMz+mtek6c0Ufd3NRxMDYNGak93KB/ypssxcjkIYZ9D90FK1JfG5CRf2A==
   dependencies:
     commander "14.0.2"
     cosmiconfig "9.0.0"
