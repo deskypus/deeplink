@@ -15,7 +15,7 @@
     package-manager-detector "^1.3.0"
     tinyexec "^1.0.1"
 
-"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.26.2", "@babel/code-frame@^7.27.1":
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.26.2":
   version "7.27.1"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.27.1.tgz#200f715e66d52a23b221a9435534a91cc13ad5be"
   integrity sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==
@@ -24,13 +24,22 @@
     js-tokens "^4.0.0"
     picocolors "^1.1.1"
 
-"@babel/generator@^7.27.5":
-  version "7.28.5"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.28.5.tgz#712722d5e50f44d07bc7ac9fe84438742dd61298"
-  integrity sha512-3EwLFhZ38J4VyIP6WNtt2kUdW9dokXA9Cr4IVIFHuCpZ3H8/YFOl5JjZHisrn1fATPBmKKqXzDFvh9fUwHz6CQ==
+"@babel/code-frame@^7.27.1", "@babel/code-frame@^7.28.6":
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.28.6.tgz#72499312ec58b1e2245ba4a4f550c132be4982f7"
+  integrity sha512-JYgintcMjRiCvS8mMECzaEn+m3PfoQiyqukOMCCVQtoJGYJw8j/8LBJEiqkHLkfwCcs74E3pbAUFNg7d9VNJ+Q==
   dependencies:
-    "@babel/parser" "^7.28.5"
-    "@babel/types" "^7.28.5"
+    "@babel/helper-validator-identifier" "^7.28.5"
+    js-tokens "^4.0.0"
+    picocolors "^1.1.1"
+
+"@babel/generator@^7.27.5":
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.28.6.tgz#48dcc65d98fcc8626a48f72b62e263d25fc3c3f1"
+  integrity sha512-lOoVRwADj8hjf7al89tvQ2a1lf53Z+7tiXMgpZJL3maQPDxh0DgLMN62B2MKUOFcoodBHLMbDM6WAbKgNy5Suw==
+  dependencies:
+    "@babel/parser" "^7.28.6"
+    "@babel/types" "^7.28.6"
     "@jridgewell/gen-mapping" "^0.3.12"
     "@jridgewell/trace-mapping" "^0.3.28"
     jsesc "^3.0.2"
@@ -52,12 +61,12 @@
   dependencies:
     "@babel/types" "^7.27.7"
 
-"@babel/parser@^7.27.2", "@babel/parser@^7.27.7", "@babel/parser@^7.28.5":
-  version "7.28.5"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.28.5.tgz#0b0225ee90362f030efd644e8034c99468893b08"
-  integrity sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==
+"@babel/parser@^7.27.7", "@babel/parser@^7.28.5", "@babel/parser@^7.28.6":
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.28.6.tgz#f01a8885b7fa1e56dd8a155130226cd698ef13fd"
+  integrity sha512-TeR9zWR18BvbfPmGbLampPMW+uW1NZnJlRuuHso8i87QZNq2JRF9i6RgxRqtEq+wQGsS19NNTWr2duhnE49mfQ==
   dependencies:
-    "@babel/types" "^7.28.5"
+    "@babel/types" "^7.28.6"
 
 "@babel/runtime@7.28.4":
   version "7.28.4"
@@ -65,13 +74,13 @@
   integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
 
 "@babel/template@^7.27.2":
-  version "7.27.2"
-  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.27.2.tgz#fa78ceed3c4e7b63ebf6cb39e5852fca45f6809d"
-  integrity sha512-LPDZ85aEJyYSd18/DkjNh4/y1ntkE5KwUHWTiqgRxruuZL2F1yuHligVHLvcHY2vMHXttKFpJn6LwfI7cw7ODw==
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.28.6.tgz#0e7e56ecedb78aeef66ce7972b082fce76a23e57"
+  integrity sha512-YA6Ma2KsCdGb+WC6UpBVFJGXL58MDA6oyONbjyF/+5sBgxY/dwkhLogbMT2GXXyU84/IhRw/2D1Os1B/giz+BQ==
   dependencies:
-    "@babel/code-frame" "^7.27.1"
-    "@babel/parser" "^7.27.2"
-    "@babel/types" "^7.27.1"
+    "@babel/code-frame" "^7.28.6"
+    "@babel/parser" "^7.28.6"
+    "@babel/types" "^7.28.6"
 
 "@babel/traverse@7.27.7":
   version "7.27.7"
@@ -86,10 +95,10 @@
     debug "^4.3.1"
     globals "^11.1.0"
 
-"@babel/types@^7.27.1", "@babel/types@^7.27.7", "@babel/types@^7.28.5":
-  version "7.28.5"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.28.5.tgz#10fc405f60897c35f07e85493c932c7b5ca0592b"
-  integrity sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==
+"@babel/types@^7.27.7", "@babel/types@^7.28.6":
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.28.6.tgz#c3e9377f1b155005bcc4c46020e7e394e13089df"
+  integrity sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==
   dependencies:
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
@@ -1286,24 +1295,26 @@
     "@typescript-eslint/types" "8.53.0"
     eslint-visitor-keys "^4.2.1"
 
-"@unocss/astro@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/astro/-/astro-66.5.12.tgz#137c3c246d7d14c8d60a9de8a703ec28be5fed0d"
-  integrity sha512-ynhlljsTGTHAcQHbpqxe3IXEDXjPm9IdeDWAhPet7UiGXhW230vEZ+1/OoARqLysVSVz4pPb81MDgS167Oo4Nw==
+"@unocss/astro@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/astro/-/astro-66.6.0.tgz#ede6b364116e71b08af0ceb28dd8ee5cb8ae5d1b"
+  integrity sha512-HCDgZnoXv6pZGUK9N4ko7ZeBP1YTIP8IFj0Vr7pXVdv9sGR9CofoueFbclTvPQ065UHSsG+WI+JO5z9/BGd5fw==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/reset" "66.5.12"
-    "@unocss/vite" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/reset" "66.6.0"
+    "@unocss/vite" "66.6.0"
 
-"@unocss/cli@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-66.5.12.tgz#025fe72f662819b43d9568c9a342219e8701cd77"
-  integrity sha512-aqjhYSiYneGfzXH6iYCY4StVN1QyeRKLhuBPkJO7gzad+1RNeqH2se1l4c5Fnvf+1rU9xRM8cw1CUSIn9UOxYQ==
+"@unocss/cli@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-66.6.0.tgz#231c6a2e4812c1da1d3fee1c619cab5752546373"
+  integrity sha512-wtA6YBIvW2f8FISdYS8rx+B3ZGTUjw3YO3Fxz1ApUCHinYSdz8SoNWShH1I61LWbcjJ4hbjI/D9t/Dmgp6vmiQ==
   dependencies:
     "@jridgewell/remapping" "^2.3.5"
-    "@unocss/config" "66.5.12"
-    "@unocss/core" "66.5.12"
-    "@unocss/preset-uno" "66.5.12"
+    "@unocss/config" "66.6.0"
+    "@unocss/core" "66.6.0"
+    "@unocss/preset-wind3" "66.6.0"
+    "@unocss/preset-wind4" "66.6.0"
+    "@unocss/transformer-directives" "66.6.0"
     cac "^6.7.14"
     chokidar "^5.0.0"
     colorette "^2.0.20"
@@ -1314,186 +1325,186 @@
     tinyglobby "^0.2.15"
     unplugin-utils "^0.3.1"
 
-"@unocss/config@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/config/-/config-66.5.12.tgz#cbbf884e673b623d4aaff0d2d7a6e51e6372faf5"
-  integrity sha512-rgV7Jj1nBZsLgk/FIFMDzKVLzIZlbKT5T0SB+odo9xZUsN5xwZZMl7I8TfZj5VxQaYqFEgSpS/Y4QCWlZ+7scQ==
+"@unocss/config@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/config/-/config-66.6.0.tgz#b60c3bc598b2b59b339c1b8f37b8fa86cbd62397"
+  integrity sha512-YvNk/b9jGmT1TQGDbHR+0VALnTsPLzSTzw90t09ggny9YxeF0XnsP06M5+H0EJPwpmdigBC++KEIMaK8SYDsaQ==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
     unconfig "^7.4.2"
 
-"@unocss/core@66.5.12", "@unocss/core@^66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-66.5.12.tgz#d46351a109d12943b044d9ed6126f505e0dffa03"
-  integrity sha512-/m6su0OXcCYRwIMf8sobBjZTC25iBLUnQVcfyvHOJwLJzOMr8dtNmZbqTs7+Kouz40jlPF7pR+ufFrN+s5ZD7g==
+"@unocss/core@66.6.0", "@unocss/core@^66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-66.6.0.tgz#fd44ef48f25188758543ff4671b191dbedbfbe36"
+  integrity sha512-Sxm7HmhsPIIzxbPnWembPyobuCeA5j9KxL+jIOW2c+kZiTFjHeju7vuVWX9jmAMMC+UyDuuCQ4yE+kBo3Y7SWQ==
 
-"@unocss/extractor-arbitrary-variants@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/extractor-arbitrary-variants/-/extractor-arbitrary-variants-66.5.12.tgz#d591f1a64df57f3215cfc3dd61a1e72373544d59"
-  integrity sha512-UGzHhLaaSu/YT0rmXtdoE1ttLvwWsI/RVTwNNy3QnL/y4Hvmo7T1MtG5Ri5btfqfDWPzrQLQiTvI8loGCD8lFQ==
+"@unocss/extractor-arbitrary-variants@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/extractor-arbitrary-variants/-/extractor-arbitrary-variants-66.6.0.tgz#a601a04893b36fa8d2e12e55d2636dcf4b77e169"
+  integrity sha512-AsCmpbre4hQb+cKOf3gHUeYlF7guR/aCKZvw53VBk12qY5wNF7LdfIx4zWc5LFVCoRxIZlU2C7L4/Tt7AkiFMA==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
 
-"@unocss/inspector@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-66.5.12.tgz#a102f77616b0b2e16828c2a82cec18ac6eebcbf7"
-  integrity sha512-X8Ygo842Yy0g46JNlgUGvqDhvr5BuVfFwMJeWSFJBYHzPKsZFxTU29aGxNDNDascTnNdWjZZqerPpG5esa+K2Q==
+"@unocss/inspector@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-66.6.0.tgz#6d223ff157d851714dcc5ba0e87d38207a50cdc3"
+  integrity sha512-BvdY8ah+OTmzFMb+z8RZkaF15+PWRFt9S2bOARkkRBubybX9EE1rxM07l74kO5Dj16++CS4nO15XFq39pPoBvg==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
     colorette "^2.0.20"
     gzip-size "^6.0.0"
     sirv "^3.0.2"
     vue-flow-layout "^0.2.0"
 
-"@unocss/postcss@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/postcss/-/postcss-66.5.12.tgz#843a21ed8783e5eee8d537fcaa5d0ed473637aaf"
-  integrity sha512-fTGrn19I45jzoP9Jsxty9/PXix3PFftj3tgrIsYjZ0R4tpCffW0s7X/iEl3GwfR45kpe5NlQ5ghskd3CFHUp+Q==
+"@unocss/postcss@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/postcss/-/postcss-66.6.0.tgz#8d0cf6d709171c6c002da14c2c30215120d2890c"
+  integrity sha512-Tn8l8JMXJcTgzrPHSukpRBnVIt561bQCUle7jW8NXk61vYBy8p52nEBkNy5QMXybaCih5ghg2d/+nDIAl9YIpw==
   dependencies:
-    "@unocss/config" "66.5.12"
-    "@unocss/core" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/config" "66.6.0"
+    "@unocss/core" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
     css-tree "^3.1.0"
     postcss "^8.5.6"
     tinyglobby "^0.2.15"
 
-"@unocss/preset-attributify@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-attributify/-/preset-attributify-66.5.12.tgz#65da100ef4141c2cc3a3ccaec4e9e81ed8304864"
-  integrity sha512-9h/Zgiztzjp1Zf/c/DHAgm1bvzh5oLxAHhPMHmEFjNO335vEjd+PUZBzXXymKM+VoBlMz5DADpAVlTvq1N1aJA==
+"@unocss/preset-attributify@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-attributify/-/preset-attributify-66.6.0.tgz#2cfc1c66856d195ac114903dcf7c16c6b72dc6db"
+  integrity sha512-IfGZT9LjQkfpJaVjDtFMxOlrEoj7m1DCztRdby0FaptXChE7vdgRkYFl8HDeXMkEIlzV1YTHuIarwJ+tV+1SRQ==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
 
-"@unocss/preset-icons@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-66.5.12.tgz#2d4767baea9d737bfc63f0868593eff975ef21dd"
-  integrity sha512-3bgkN8tTrcOSGuBcJSDrtDfBt7WU3chFjfw7zo4ign+Z0L6qANB2O62AOdOMJOxKjlppJ6a8AceHthhPZP2PDA==
+"@unocss/preset-icons@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-icons/-/preset-icons-66.6.0.tgz#485e34b708071c62f27d469e310611b4e8991e2a"
+  integrity sha512-ObgmN9SsqU7TiClNvy+mQDyqzwOhlBXT0whXFp3iiBfSbnxUIDyf4Pr/2hwxnAWrCWCQj7xw2H0Y0sDtXq8XkA==
   dependencies:
     "@iconify/utils" "^3.1.0"
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
     ofetch "^1.5.1"
 
-"@unocss/preset-mini@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-mini/-/preset-mini-66.5.12.tgz#f7d1989f82ab40654b60d39c4225ec352bee4415"
-  integrity sha512-JEyhb0vKIguaZnrGw0CXcgU6/9cWubVL8BTiLl26hsC+6vFHVSnaDHIWOJ8sTShzEQjPSxKDlAj/lGQCC2+88Q==
+"@unocss/preset-mini@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-mini/-/preset-mini-66.6.0.tgz#2ac03729f71a00ea415ad16b9c14fa47f5bca3fc"
+  integrity sha512-8bQyTuMJcry/z4JTDsQokI0187/1CJIkVx9hr9eEbKf/gWti538P8ktKEmHCf8IyT0At5dfP9oLHLCUzVetdbA==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/extractor-arbitrary-variants" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/extractor-arbitrary-variants" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
 
-"@unocss/preset-tagify@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-tagify/-/preset-tagify-66.5.12.tgz#488f596af32527c6d8222d4d3d54c5b250fef91e"
-  integrity sha512-gzQ+986lNxpqMeGxeYlDRpfrzcRt2DFjVpfmuNYD6daK4AFRbetQbhynnZyf8zwf++2YUDGf6xI9TfTTSG2QQA==
+"@unocss/preset-tagify@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-tagify/-/preset-tagify-66.6.0.tgz#efa776887e5efa07d3616a223774d04298849f47"
+  integrity sha512-Vy9olM61lqTDxcHbfDkIJNp9LF2m8K9I/F2J0diD+BVZgpym1QRK6+aZaeAPJuMCyQrOk87dm7VIiAPFtLOXFA==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
 
-"@unocss/preset-typography@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-typography/-/preset-typography-66.5.12.tgz#c1410acd2420a7e177a0571624ec90b3134eac59"
-  integrity sha512-ckOD1coTCLXhO3oDCINqm0W292dgtYWtUYeQneNARJz3jjdNqANFPOP/y9Kpfe7WGNegVySRlDizi/L6VSdqJQ==
+"@unocss/preset-typography@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-typography/-/preset-typography-66.6.0.tgz#7679b9fdb2ca54d530c10db1411e13516b95b8da"
+  integrity sha512-vDogO+jaatGSAoZqqa9+GJ18WbrwYzJr5UyIFUQqXJ5TUDaWzKb4Qhty2WnOtjQaf4sOMML8JFA/cydZl+Rjjw==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
 
-"@unocss/preset-uno@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-uno/-/preset-uno-66.5.12.tgz#859d0891f108c24c38b013c66f20244b570986cf"
-  integrity sha512-jTLhDeRqhTrCSbEgCQIg0K0PLFDtukG4eeOH5ff7Q4CtmkmsCUK0pqeXegi6ZCyatDwm72qc2WABMSqDMBdhtw==
+"@unocss/preset-uno@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-uno/-/preset-uno-66.6.0.tgz#0c3eb74d801a1108970dbe92fbb2dfb5347b0290"
+  integrity sha512-xDppgdgFk+JNrL9jhqhrn6H9IS8P10p1HSsWOYF+9owg43zqpeNpzDMvZGwq8uxq6guyB1fu6l4YzO+bDZnwvw==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/preset-wind3" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/preset-wind3" "66.6.0"
 
-"@unocss/preset-web-fonts@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-web-fonts/-/preset-web-fonts-66.5.12.tgz#b4b701f20828513662ebf21a27df0a80e87e15a8"
-  integrity sha512-NSUf+H5X0jZ1PLWW6D5ldBERERpbH8VvkpJJhxNTCS54Lj5vJiZ1S06UYxBB57vuUOaHpQOGTbKUSc204LCqdw==
+"@unocss/preset-web-fonts@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-web-fonts/-/preset-web-fonts-66.6.0.tgz#5429d928ba5f185e9744f43f4ecb0c70d4873604"
+  integrity sha512-Mqb8bVSAfDEnkGyAl8ZPdvaojq3YSow4lvxGCOm7nHJFIXkRKgYBgD3tmm+rvO81CUtihZd7hdw0Ay+8pYrlTw==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
     ofetch "^1.5.1"
 
-"@unocss/preset-wind3@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-wind3/-/preset-wind3-66.5.12.tgz#d7e74899ee0acaade43efef8ee47a5ee938c0d7a"
-  integrity sha512-SUzX12aQcM1ikzfv4rqwd/xuXtK5GKvhV0/JjvtG/kDTMGaKv161F2ytduj+2pBHtpJO5fUmreCD5ycTUIkxhQ==
+"@unocss/preset-wind3@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-wind3/-/preset-wind3-66.6.0.tgz#b6eda4e8a7767d4fdb7381027d5cacbe8081b8f2"
+  integrity sha512-7gzswF810BCSru7pF01BsMzGZbfrsWT5GV6JJLkhROS2pPjeNOpqy2VEfiavv5z09iGSIESeOFMlXr5ORuLZrg==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/preset-mini" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/preset-mini" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
 
-"@unocss/preset-wind4@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-wind4/-/preset-wind4-66.5.12.tgz#db00d338e3952d5612ef2f7daeb6cca703ebb773"
-  integrity sha512-JVddnLJ6NOk7hOXA0Y8SYbQEu+JpURbE9o/IHVCkRClVRkE81b9KgJf7WQa/8KIr1O20wRRFdt9QRH4m3pZJ/A==
+"@unocss/preset-wind4@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-wind4/-/preset-wind4-66.6.0.tgz#392ee3a9a1fb36a227015656a15bd3d59cfa9842"
+  integrity sha512-1yyo9fmB+r5C92kSHU7lIaqGJdvz5UQyYZxYDxSmWLAUzWEK5HBRj6OkSF6rUnz+Yd4JvgOgACZNOShVOezPlA==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/extractor-arbitrary-variants" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/extractor-arbitrary-variants" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
 
-"@unocss/preset-wind@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/preset-wind/-/preset-wind-66.5.12.tgz#8c79f6f4eb9b0136884bc9bc10017bc2f3f3dac3"
-  integrity sha512-wp1/8JqQriv1AqpxskKbZYD9TNqZLQ9VBr7nNN6OkiPXBE1egEwnyb/fY+sS7IpEgwi4N9uehwQgk0/xs84SWg==
+"@unocss/preset-wind@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-wind/-/preset-wind-66.6.0.tgz#7da085a83fc835a2f2f7403741e8a19899ddad62"
+  integrity sha512-6uVq3/gV1MD9ZsycrYLP6OvAS9kI1oGAIuccKKspZHW3jqwEhJmPofDD4pYwbkx4i4zSWzoLakcfp9d67Szjqg==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/preset-wind3" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/preset-wind3" "66.6.0"
 
-"@unocss/reset@66.5.12", "@unocss/reset@^66.0.0":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-66.5.12.tgz#cdc9f881e8710dba9380ddef81f38a1256231505"
-  integrity sha512-wGTMu1sXVdxnzAonzHk/yUsyDyGrr8OiXCDSC7pVNep6eXhhf0g85v/Gx9FoAjZRyCppm6ePDWXtWYS8zglfCQ==
+"@unocss/reset@66.6.0", "@unocss/reset@^66.0.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-66.6.0.tgz#265646a0e25014176ff580f38b02d6f1c25fbd61"
+  integrity sha512-OQK5F7Dzx0wWDSPTYEz7NRP9pekufSAkjxfKOyKokiXOUzVTg8Yx8sOvCsA3Oi0Rx5WlsO2LN+MOBekpkrttXg==
 
-"@unocss/rule-utils@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/rule-utils/-/rule-utils-66.5.12.tgz#f2bda82a56dcc7f9f3cf56fad7d0c7272e74380e"
-  integrity sha512-2UQvdjS6nD3QHLEwcXlDhXFNiOUQDuOC+itX4tjqvnjP/hj5A99WEUHemb8WEHAlHAt7khe9591+BkHHo3BX/w==
+"@unocss/rule-utils@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/rule-utils/-/rule-utils-66.6.0.tgz#9750d5105749f51b409614add030b83daa7c2081"
+  integrity sha512-v16l6p5VrefDx8P/gzWnp0p6/hCA0vZ4UMUN6SxHGVE6V+IBpX6I6Du3Egk9TdkhZ7o+Pe1NHxksHcjT0V/tww==
   dependencies:
-    "@unocss/core" "^66.5.12"
+    "@unocss/core" "^66.6.0"
     magic-string "^0.30.21"
 
-"@unocss/transformer-attributify-jsx@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/transformer-attributify-jsx/-/transformer-attributify-jsx-66.5.12.tgz#5a872a2fd3d5b64ac57464058a30b3288d592664"
-  integrity sha512-h88voRNzSDDBf8In9A/wT0x7IlpRSnOnS62hBIcWk3Ci6w2+I/5eMFP+Rl1kY3zAz4hJ1/Ei6d9Rup3eS5037w==
+"@unocss/transformer-attributify-jsx@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-attributify-jsx/-/transformer-attributify-jsx-66.6.0.tgz#b016823e7fede785f3768ec4f5e436c157b753a5"
+  integrity sha512-fzjLVlhYO8JdHzIusRKAva5ZOnA4deOVYuiM6HVpbX7P19479TVHZgeSV+AG0BWLhmIJ2cer+n3/CIO5nodT6g==
   dependencies:
     "@babel/parser" "7.27.7"
     "@babel/traverse" "7.27.7"
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
 
-"@unocss/transformer-compile-class@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/transformer-compile-class/-/transformer-compile-class-66.5.12.tgz#72d41bc5d5edf89897dd08e0f50eade88a544b09"
-  integrity sha512-EV9LCrIfwUrevHOAhcQD/4HO5NdDzd1ALXNSDbaRxPjDVquWIRs/DujUmihyV2wqu2qEnkOumC+kyDPfZ7/u3w==
+"@unocss/transformer-compile-class@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-compile-class/-/transformer-compile-class-66.6.0.tgz#7ee6d46be79e5091b15057a6de4c46b5f03d6fd1"
+  integrity sha512-OkwdbIfsbs8dtHIfBaoya/SPHZUJeogvJl2BpJb4/3nY/tWBZB/+i2vPMAML3D9aQYZAuC7uqcTRGNbuvyyy+w==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
 
-"@unocss/transformer-directives@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/transformer-directives/-/transformer-directives-66.5.12.tgz#988fa5b1b2b467b2b3e8e7a1378e7c03e78f1199"
-  integrity sha512-oRTqR2a5du6b1md549JUX8doXcXY0XNTkiar7R0HZInF4ic0BbjG+nflifd1UtTbI1TUOtcZLQHm+/4tQqM4MA==
+"@unocss/transformer-directives@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-directives/-/transformer-directives-66.6.0.tgz#d0a6dfb331b18900c189d268b21fabd0a9ad694a"
+  integrity sha512-2Z4FFjJI/bH6kKGuuuO0DpFEVSFOhFnGLTFK8y9BGz0cIOQOIuEKTemM7QLqPuyRSORBO1RKvcKvA3DV0n1X7g==
   dependencies:
-    "@unocss/core" "66.5.12"
-    "@unocss/rule-utils" "66.5.12"
+    "@unocss/core" "66.6.0"
+    "@unocss/rule-utils" "66.6.0"
     css-tree "^3.1.0"
 
-"@unocss/transformer-variant-group@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/transformer-variant-group/-/transformer-variant-group-66.5.12.tgz#ff3f1563676758b8776ef7f9397aa6b30992a41c"
-  integrity sha512-iNHzliFCIVjbbmM9PVexqFhPa1t6C/6Ma3ZtkQRMq9KD2YsLvxdabvESEbjHA3iooR+bjPkiROC9whyRLWnyqQ==
+"@unocss/transformer-variant-group@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-variant-group/-/transformer-variant-group-66.6.0.tgz#2f68e44fd99f7ba3b714c6580e20c7769ad4bdb2"
+  integrity sha512-kWYYcrn8ZFKLVCU6kB8yaQY9iYgx3/XhPb9c0XZZ5QzWjoGffrl6XLUk8XrjR/yxC3qwHg/WizzsmsQ2OXF6Qg==
   dependencies:
-    "@unocss/core" "66.5.12"
+    "@unocss/core" "66.6.0"
 
-"@unocss/vite@66.5.12":
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/@unocss/vite/-/vite-66.5.12.tgz#34ce941dcff7a1e2e2ccfcfc482eca51bd412974"
-  integrity sha512-BSbUmUCLF3303Cu0y+gbhibXkXPpcR6lVFNN2g06EXTDNJEoS/1VKvZEUBU8RP8d1mLkv5mqN4FzdltZ+vA3uw==
+"@unocss/vite@66.6.0":
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/@unocss/vite/-/vite-66.6.0.tgz#c85ef9857be6182fd7ec194581cf0c04fe1d358a"
+  integrity sha512-SC0/rX0xSjdu8Jaj98XztHOuvXHWDVk0YaHKRAQks2Oj3yyqAOrhzhDUH0zzFaQWf5bsKVYK40H+h4rMk9vm5Q==
   dependencies:
     "@jridgewell/remapping" "^2.3.5"
-    "@unocss/config" "66.5.12"
-    "@unocss/core" "66.5.12"
-    "@unocss/inspector" "66.5.12"
+    "@unocss/config" "66.6.0"
+    "@unocss/core" "66.6.0"
+    "@unocss/inspector" "66.6.0"
     chokidar "^5.0.0"
     magic-string "^0.30.21"
     pathe "^2.0.3"
@@ -5045,9 +5056,9 @@ typescript@5.9.3:
   integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
 
 ufo@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.6.1.tgz#ac2db1d54614d1b22c1d603e3aef44a85d8f146b"
-  integrity sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.6.2.tgz#aaf4d46b98425b2fb5031abe8d65ca069e93e755"
+  integrity sha512-heMioaxBcG9+Znsda5Q8sQbWnLJSl98AFDXTO80wELWEzX3hordXsTdxrIfMQoO9IY1MEnoGoPjpoKpMj+Yx0Q==
 
 unconfig-core@7.4.2:
   version "7.4.2"
@@ -5114,29 +5125,29 @@ universalify@^2.0.0:
   integrity sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==
 
 unocss@^66.0.0:
-  version "66.5.12"
-  resolved "https://registry.yarnpkg.com/unocss/-/unocss-66.5.12.tgz#559ba2a8b5939c2cdc07af5765e9ce61bbcd1f63"
-  integrity sha512-3WdSuM+SOjVpXDtffTuSvYTMuufpFzBehu2b4Tr7DcoIUxGouZn3mdxCLx3PiEuK0ih40Fo7Sjm+J4mccHfwLg==
+  version "66.6.0"
+  resolved "https://registry.yarnpkg.com/unocss/-/unocss-66.6.0.tgz#fd58028b48e1cd7c3c8ddfc109affbde72b1db22"
+  integrity sha512-B5QsMJzFKeTHPzF5Ehr8tSMuhxzbCR9n+XP0GyhK9/2jTcBdI0/T+rCDDr9m6vUz+lku/coCVz7VAQ2BRAbZJw==
   dependencies:
-    "@unocss/astro" "66.5.12"
-    "@unocss/cli" "66.5.12"
-    "@unocss/core" "66.5.12"
-    "@unocss/postcss" "66.5.12"
-    "@unocss/preset-attributify" "66.5.12"
-    "@unocss/preset-icons" "66.5.12"
-    "@unocss/preset-mini" "66.5.12"
-    "@unocss/preset-tagify" "66.5.12"
-    "@unocss/preset-typography" "66.5.12"
-    "@unocss/preset-uno" "66.5.12"
-    "@unocss/preset-web-fonts" "66.5.12"
-    "@unocss/preset-wind" "66.5.12"
-    "@unocss/preset-wind3" "66.5.12"
-    "@unocss/preset-wind4" "66.5.12"
-    "@unocss/transformer-attributify-jsx" "66.5.12"
-    "@unocss/transformer-compile-class" "66.5.12"
-    "@unocss/transformer-directives" "66.5.12"
-    "@unocss/transformer-variant-group" "66.5.12"
-    "@unocss/vite" "66.5.12"
+    "@unocss/astro" "66.6.0"
+    "@unocss/cli" "66.6.0"
+    "@unocss/core" "66.6.0"
+    "@unocss/postcss" "66.6.0"
+    "@unocss/preset-attributify" "66.6.0"
+    "@unocss/preset-icons" "66.6.0"
+    "@unocss/preset-mini" "66.6.0"
+    "@unocss/preset-tagify" "66.6.0"
+    "@unocss/preset-typography" "66.6.0"
+    "@unocss/preset-uno" "66.6.0"
+    "@unocss/preset-web-fonts" "66.6.0"
+    "@unocss/preset-wind" "66.6.0"
+    "@unocss/preset-wind3" "66.6.0"
+    "@unocss/preset-wind4" "66.6.0"
+    "@unocss/transformer-attributify-jsx" "66.6.0"
+    "@unocss/transformer-compile-class" "66.6.0"
+    "@unocss/transformer-directives" "66.6.0"
+    "@unocss/transformer-variant-group" "66.6.0"
+    "@unocss/vite" "66.6.0"
 
 unplugin-auto-import@20.3.0:
   version "20.3.0"
